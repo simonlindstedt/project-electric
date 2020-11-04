@@ -22,6 +22,7 @@ nav {
 }
 
 nav ul {
+  margin: 0;
   height: inherit;
   padding: 0;
   list-style-type: none;
