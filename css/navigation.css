@@ -1,17 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Helvetica, sans-serif;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: white;
-}
+/* Navigation */
 
 nav {
   position: sticky;
@@ -49,21 +36,9 @@ header {
 
 header h1 {
   position: absolute;
-  color: white;
 }
 
 header img {
-  width: 100%;
-  height: inherit;
-  object-fit: cover;
-}
-
-section {
-  width: 100%;
-  height: 100vh;
-}
-
-section img {
   width: 100%;
   height: inherit;
   object-fit: cover;

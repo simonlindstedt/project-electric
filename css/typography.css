@@ -1,0 +1,24 @@
+/* Typography */
+
+@font-face {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("/assets/fonts/Dosis-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family: "Dosis";
+  font-weight: 900;
+  font-size: 2rem;
+}

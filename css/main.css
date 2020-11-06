@@ -1,0 +1,17 @@
+/* Main */
+
+:root {
+  --husBlue: #162133;
+  --darkGreen: #303b37;
+  --greyBlue: #a8b7ba;
+  --grey: #cbcdca;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}

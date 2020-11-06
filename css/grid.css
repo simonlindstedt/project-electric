@@ -1,0 +1,12 @@
+/* Grids */
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+section img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
