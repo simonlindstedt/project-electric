@@ -11,7 +11,55 @@ section img {
   object-fit: cover;
 }
 
-.grid {
+.grid-two-col {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-six-col {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid-item {
+  padding: 24px;
+}
+
+.grid-item-big {
+  grid-column: span 4;
+}
+
+.grid-item-small {
+  grid-column: span 2;
+}
+
+.grid-two-row {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-two-row-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);
+}
+
+.grid-item {
+  padding: 24px;
+}
+
+.blue {
+  background-color: var(--husBlue);
+}
+
+.green {
+  background-color: var(--darkGreen);
+}
+
+.greyGreen {
+  background-color: var(--greyBlue);
+}
+
+.grey {
+  background-color: var(--grey);
 }
