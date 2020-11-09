@@ -1,0 +1,10 @@
+/* Animations */
+
+@keyframes blurImage {
+  from {
+    filter: blur(0px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
