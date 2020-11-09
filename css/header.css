@@ -12,11 +12,6 @@ header img {
   width: 100%;
   height: inherit;
   object-fit: cover;
-  filter: blur(0px);
-  animation-name: blurImage;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
 }
 
 header h1 {
