@@ -9,14 +9,14 @@ header {
 }
 
 header img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
   width: 100%;
   height: inherit;
   object-fit: cover;
 }
 
 header h1 {
-  font-weight: 100;
-  font-size: 8rem;
   color: white;
-  position: absolute;
 }

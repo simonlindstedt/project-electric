@@ -5,60 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/typography.css" />
-    <link rel="stylesheet" href="/css/animations.css" />
     <link rel="stylesheet" href="/css/navigation.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/grid.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
+    <script src="/js/scroll.js"></script>
     <title>Electric</title>
   </head>
   <body>
-    <nav id="navigation">
-      <ul>
-        <li>
-          <a href="#one">First</a>
-        </li>
-        <li>
-          <a href="#two">Second</a>
-        </li>
-        <li>
-          <a href="#three">Third</a>
-        </li>
-        <li>
-          <a href="#four">Fourth</a>
-        </li>
-      </ul>
-    </nav>
-    <header id="one">
-      <h1>terrafugia</h1>
-      <img src="assets/Preview/skog_testrendering1.jpg" alt="terrafugia" />
+    <header id="first">
+      <nav>
+        <ul>
+          <li>
+            <a href="#first">First</a>
+          </li>
+          <li>
+            <a href="#second">Second</a>
+          </li>
+          <li>
+            <a href="#third">Third</a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="assets/Preview/skog_testrendering1.jpg"
+        style="object-position: right"
+      />
+      <h1>electric</h1>
     </header>
-    <section class="grid-six-col" id="two">
-      <img
-        class="grid-item full"
-        src="assets/Preview/protot2.jpg"
-        alt="testimage"
-      />
-    </section>
-    <section class="grid-six-col" id="three">
-      <img
-        class="grid-item half"
-        src="/assets/Preview/Terrafugia_preview1.jpg"
-        alt="testimage"
-      />
-      <img
-        class="grid-item half"
-        src="/assets/Preview/Terrafugia_preview_combine.jpg"
-        alt="testimage"
-      />
-    </section>
-    <section class="grid-six-col" id="four">
-      <img class="grid-item split" src="assets/Preview/miljöbild_preview.jpg" />
-      <img
-        class="grid-item split"
-        src="assets/Preview/bro_testrendering1.jpg"
-      />
-    </section>
+    <main>
+      <section class="grid" id="second">
+        <div class="grid-item half">
+          <img src="assets/Preview/Terrafugia_preview1_01.jpg" />
+          <h2>test header</h2>
+        </div>
+        <div class="grid-item half">
+          <img src="assets/Preview/Terrafugia_preview_combine.jpg" />
+        </div>
+      </section>
+      <section class="grid" id="third">
+        <div class="grid-item full">
+          <img src="/assets/Preview/protot2.jpg" />
+          <h2>test header</h2>
+        </div>
+      </section>
+    </main>
   </body>
-  <footer></footer>
 </html>
