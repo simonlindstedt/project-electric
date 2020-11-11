@@ -17,7 +17,7 @@ img.grid-item {
 }
 
 .full {
-  grid-column: span 6;
+  grid-column: all;
 }
 
 .half {
@@ -26,4 +26,9 @@ img.grid-item {
 
 .third {
   grid-column: span 2;
+}
+
+.split {
+  grid-column: all;
+  grid-row: auto;
 }

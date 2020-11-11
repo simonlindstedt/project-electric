@@ -5,6 +5,6 @@
     filter: blur(0px);
   }
   to {
-    filter: blur(0px);
+    filter: blur(10px);
   }
 }
