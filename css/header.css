@@ -8,10 +8,10 @@ header {
   align-items: center;
 }
 
-header img {
-  z-index: -1;
+img.cover {
   position: absolute;
   top: 0;
+  z-index: -1;
   width: 100%;
   height: inherit;
   object-fit: cover;

@@ -1,10 +1,10 @@
 /* Grids */
 
-.grid-item img {
+/* .grid-item img {
   z-index: -1;
   width: 100%;
   height: 100vh;
-  margin-bottom: -5px; /*wierd gap, fix later*/
+  margin-bottom: -5px; 
   object-fit: cover;
 }
 
@@ -29,5 +29,44 @@
 
   .half {
     grid-column: span 3;
+  }
+} */
+
+section.grid {
+  width: 100%;
+  height: auto;
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.grid-item img.cover {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+.text-box {
+  padding: 24px;
+  color: white;
+}
+
+@media only screen and (min-width: 900px) {
+  section.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .half {
+    grid-column: span 3;
+  }
+
+  .full {
+    grid-column: span 6;
   }
 }
