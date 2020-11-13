@@ -8,8 +8,8 @@ nav {
   width: 100%;
   height: 38px;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /*safari fix*/
   background-color: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
 }
 
 nav ul {
@@ -28,6 +28,7 @@ nav li {
 }
 
 .burgermenu {
+  /* Example */
   width: 35px;
   height: 5px;
   background-color: black;
