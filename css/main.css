@@ -12,11 +12,11 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /* scroll-behavior: smooth; */
+  scroll-snap-type: y proximity;
 }
 
 body {
+  scroll-snap-type: y proximity; /* safari fix */
   margin: 0;
-  scroll-snap-type: y mandatory; /* safari fix */
 }
