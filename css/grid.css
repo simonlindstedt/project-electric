@@ -44,15 +44,6 @@ section.grid {
   height: 100vh;
 }
 
-.grid-item img.cover {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: inherit;
-  object-fit: cover;
-}
-
 .text-box {
   padding: 48px 24px;
   color: white;

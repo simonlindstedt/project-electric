@@ -1,33 +1,29 @@
 /* Navigation */
 
 nav {
-  display: none;
+  display: initial;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 38px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (min-width: 1000px) {
-  nav {
-    display: initial;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 48px;
-    background-color: #222;
-  }
+nav ul {
+  margin: 0;
+  height: inherit;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  nav ul {
-    margin: 0;
-    height: inherit;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  nav li {
-    margin: 0px 12px;
-  }
+nav li {
+  margin: 0px 24px;
+  padding: 8px;
 }
 
 .burgermenu {
