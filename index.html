@@ -22,28 +22,31 @@
         <li>
           <a href="#third">Third</a>
         </li>
-        <!-- <li>
-          <nav role="navigation">
-            <div id="menuToggle">
-              <input name="toggle" type="checkbox" />
-              <label for="toggle">
-                <span>menu</span>
-
-                <div></div>
-                <div></div>
-                <div></div>
-              </label>
-
-              <ul id="menu">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>About</li></a>
-                <a href="#"><li>Contact</li></a>
-              </ul>
-            </div>
-          </nav>
-        </li> -->
       </ul>
+
+      <div role="burgerMenu">
+        <div id="menuToggle">
+          <input name="toggle" type="checkbox" />
+          <label for="toggle">
+            <span></span>
+
+            <div></div>
+            <!--Hamburger-->
+            <div></div>
+            <!--Hamburger-->
+            <div></div>
+            <!--Hamburger-->
+          </label>
+
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+      </div>
     </nav>
+
     <header>
       <img
         class="cover"
@@ -93,7 +96,31 @@
             </p>
           </div>
         </div>
+        <div class="grid-item full">
+          <img
+            class="cover slides"
+            src="assets/Preview/Terrafugia_preview1.jpg"
+            alt=""
+          />
+          <img
+            class="cover slides"
+            src="assets/Preview/Terrafugia_preview1_01.jpg"
+            alt=""
+          />
+          <img
+            class="cover slides"
+            src="assets/Preview/Terrafugia_preview_combine.jpg"
+            alt=""
+          />
+          <div class="slide-nav">
+            <div class="dot" onclick="showSlide(1)"></div>
+            <div class="dot" onclick="showSlide(2)"></div>
+            <div class="dot" onclick="showSlide(3)"></div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
+  <script src="js/slideshow.js"></script>
+  <script src="js/hamburger.js"></script>
 </html>
