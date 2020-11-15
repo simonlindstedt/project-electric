@@ -28,12 +28,17 @@ nav li {
 }
 
 /* Hamburger Menu */
+
+.burgerMenu {
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+}
 #menuToggle {
-  display: block;
+  /* Burger Icon Before Click */
   position: relative;
   top: 50px;
   left: 50px;
-  z-index: 1;
   -webkit-user-select: left 0.3s ease;
   -moz-user-select: left 0.3s ease;
   -ms-user-select: left 0.3s ease;
@@ -41,19 +46,18 @@ nav li {
 }
 
 #menuToggle a {
-  text-decoration: none;
-  color: #232323;
+  color: black;
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
 #menuToggle a:hover {
-  color: #4f7794;
+  /* Hover Over Contents inside */
+  color: #447255;
 }
 
 #menuToggle input {
-  display: block;
   width: 30px;
   height: 30px;
   position: absolute;
@@ -61,27 +65,25 @@ nav li {
   left: -5px;
   padding: 0;
   cursor: pointer;
-  opacity: 0;
+  opacity: 0; /* To not see the checkbox itself */
   z-index: 2;
   -webkit-touch-callout: none;
 }
 
 #menuToggle label {
-  position: relative;
-  display: block;
   width: 30px;
   height: 30px;
 }
 
 #menuToggle label span {
+  /* Just for <span></span> */
   display: none;
 }
 
 #menuToggle label div {
-  display: block;
   width: 30px;
-  height: 2px;
-  margin-bottom: 6px;
+  height: 5px;
+  margin-bottom: 4px;
   position: relative;
   background: #cdcdcd;
   border-radius: 3px;
@@ -112,11 +114,13 @@ nav li {
 
 #menu {
   position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #ededed; /* insert opacity */
+  width: 100%;
+  height: 100%;
+  margin: -50px 0 0 -50px;
+  padding: 100px;
+  padding-top: 50px;
+  background: #f5f5f5;
+  opacity: 50%;
   list-style-type: none;
   left: -100%;
   -webkit-transition: left 0.3s ease;

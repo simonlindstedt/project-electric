@@ -17,6 +17,34 @@ section.grid {
   color: white;
 }
 
+/*Slideshow*/
+
+.slides {
+  display: none;
+}
+
+.slide-nav {
+  position: absolute;
+  bottom: 0;
+  right: 24px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0px 12px;
+  border-radius: 100%;
+  border: 2px solid black;
+}
+.active {
+  background-color: salmon;
+}
+
 @media only screen and (min-width: 900px) {
   section.grid {
     display: grid;
