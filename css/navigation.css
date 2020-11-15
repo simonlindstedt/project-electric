@@ -38,7 +38,6 @@ nav li {
   -moz-user-select: left 0.3s ease;
   -ms-user-select: left 0.3s ease;
   user-select: none;
-  transition: left 0.3s ease-in-out;
 }
 
 #menuToggle a {

@@ -1,7 +1,8 @@
 /* Header */
 
 header {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
+  -webkit-scroll-snap-coordinate: 50% 50%;
   width: 100%;
   height: 100vh;
   display: flex;
