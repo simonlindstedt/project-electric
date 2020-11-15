@@ -14,13 +14,9 @@
 html {
   /* scroll-behavior: smooth; */
   scroll-snap-type: y mandatory;
-  -webkit-scroll-snap-type: mandatory;
-  -webkit-scroll-snap-destination: 50% 50%;
 }
 
 body {
   scroll-snap-type: y mandatory; /* safari fix */
-  -webkit-scroll-snap-type: mandatory;
-  -webkit-scroll-snap-destination: 50% 50%;
   margin: 0;
 }
