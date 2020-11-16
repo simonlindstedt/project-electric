@@ -21,3 +21,38 @@ img.cover {
 header h1 {
   color: white;
 }
+
+footer {
+  position: relative;
+  scroll-snap-align: end;
+  width: 100%;
+  height: 400px;
+  padding: 24px;
+  background-color: var(--husBlue);
+  color: var(--grey);
+  display: flex;
+  flex-direction: column;
+}
+
+footer h2 {
+  margin-top: 0px;
+  font-size: 2rem;
+}
+
+footer a:link,
+a:visited {
+  color: var(--grey);
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.social-media {
+  position: absolute;
+  bottom: 24px;
+}
+
+.social-media svg {
+  width: 48px;
+  fill: var(--grey);
+  margin-right: 12px;
+}

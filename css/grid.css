@@ -17,32 +17,48 @@ section.grid {
   color: white;
 }
 
-/*Slideshow*/
+/* Gallery */
 
-.slides {
+.slide {
   display: none;
 }
 
 .slide-nav {
+  width: 100%;
   position: absolute;
   bottom: 0;
-  right: 24px;
   height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dot {
+.color-pick {
   cursor: pointer;
-  height: 20px;
-  width: 20px;
-  margin: 0px 12px;
-  border-radius: 100%;
-  border: 2px solid black;
+  width: 100%;
+  height: inherit;
+  opacity: 0.5;
+  transition: opacity;
+  transition-duration: 0.5s;
 }
-.active {
-  background-color: salmon;
+
+.active,
+.color-pick:hover {
+  opacity: 1;
+}
+
+.hus-blue {
+  background-color: var(--husBlue);
+}
+
+.dark-green {
+  background-color: var(--darkGreen);
+}
+.grey-blue {
+  background-color: var(--greyBlue);
+}
+.grey {
+  background-color: var(--grey);
 }
 
 @media only screen and (min-width: 900px) {
