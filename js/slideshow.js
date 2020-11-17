@@ -1,29 +1,25 @@
-let index = 1;
+let ind = 1;
 
-showSlide(index);
+showImage(ind);
 
-function showSlide(number) {
-  slides(number);
+function showImage(number) {
+  image(number);
 }
 
-function slides(number) {
-  index = number;
+function image(number) {
+  ind = number - 1;
+  const slides = document.querySelectorAll(".slide");
+  const colorPicks = document.querySelectorAll(".color-pick");
 
-  let i;
+  slides.forEach(function (slide) {
+    slide.style.display = "none";
+  });
 
-  const slides = document.getElementsByClassName("slide");
+  colorPicks.forEach(function (colorPick) {
+    colorPick.classList.remove("active");
+  });
 
-  const colorPicks = document.getElementsByClassName("color-pick");
+  slides[ind].style.display = "block";
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  for (i = 0; i < colorPicks.length; i++) {
-    colorPicks[i].className = colorPicks[i].className.replace(" active", "");
-  }
-
-  slides[index - 1].style.display = "block";
-
-  colorPicks[index - 1].className += " active";
+  colorPicks[ind].classList.toggle("active");
 }
