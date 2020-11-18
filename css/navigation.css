@@ -1,7 +1,10 @@
 /* Navigation */
 
 nav {
-  display: initial;
+  position: relative;
+}
+
+.navbar {
   position: fixed;
   top: 0;
   z-index: 1;
@@ -12,7 +15,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-nav ul {
+.navbar ul {
   margin: 0;
   height: inherit;
   padding: 0;
@@ -22,15 +25,15 @@ nav ul {
   align-items: center;
 }
 
-nav li {
+.navbar li {
   margin: 0px 24px;
   padding: 8px;
+  color: white;
 }
 
 /* Hamburger Menu */
 
 .burgerMenu {
-  background-color: #46acc2;
   display: flex;
   padding: 16px;
   font-family: sans-serif;
@@ -139,13 +142,11 @@ nav li {
   left: 0;
 }
 
-@media only screen and (max-width: 768px) {
-}
 /* Hamburger Menu End */
 
 /* SYMBOL FÖR MAIL */
 
-.button {
+/* .button {
   position: absolute;
   font-size: 3rem;
   text-align: center;
@@ -160,12 +161,76 @@ nav li {
 
 .button:hover {
   background-color: #274046;
-}
+} */
 
-button {
+/* button {
   color: var(--husBlue);
   position: absolute;
   right: 0;
   margin-right: 40px;
   margin-top: 550px;
+} */
+
+.contact-button {
+  cursor: pointer;
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 16px;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all;
+  transition-duration: 0.2s;
+}
+
+.contact-button svg {
+  width: 36px;
+  fill: white;
+}
+
+.contact-button-active {
+  cursor: default;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+}
+
+.contact-button-active svg {
+  display: none;
+}
+
+.contact-content {
+  display: none;
+  color: white;
+}
+
+form.contact-content input,
+button {
+  margin-bottom: 16px;
+}
+
+.contact-content-active {
+  display: flex;
+  flex-direction: column;
+}
+
+.exit {
+  position: absolute;
+  bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  margin: 0px auto;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
 }

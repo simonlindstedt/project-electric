@@ -1,0 +1,67 @@
+.navigation {
+    padding:0;
+    line-height:50px;
+    z-index:2;
+}
+
+@media only screen and (min-width: 768px )
+{
+.hamburger {
+    display: none;
+
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+      display: none;
+
+}
+
+/* <nav>
+
+      <div>
+        <button class="button">&#9993;</button>
+      </div>
+
+      <ul>
+        <li>
+          <a href="#first">First</a>
+        </li>
+        <li>
+          <a href="#second">Second</a>
+        </li>
+        <li>
+          <a href="#third">Third</a>
+        </li>
+        <li>
+          <a href="#forth">Forth</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <div role="burgerMenu">
+        <!---Optimera-->
+        <div id="menuToggle">
+          <input name="toggle" type="checkbox" />
+          <label for="toggle">
+            <span></span>
+
+            <div></div>
+            <!--Hamburger-->
+            <div></div>
+            <!--Hamburger-->
+            <div></div>
+            <!--Hamburger-->
+          </label>
+
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="index-sv.html"><li>Swedish</li></a>
+          </ul>
+        </div>
+      </div>
+    </nav> */

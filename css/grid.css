@@ -41,7 +41,6 @@ section.grid {
 .active,
 .color-pick:hover {
   transform: scaleY(1.3);
-  backdrop-filter: blur(8px);
   opacity: 0.8;
 }
 
@@ -56,6 +55,7 @@ section.grid {
 .black {
   background-color: #000000;
 }
+
 .hus-blue {
   background-color: var(--husBlue);
 }
