@@ -13,10 +13,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 
 body {
-  scroll-snap-type: y mandatory; /*safari fix*/
+  /* scroll-snap-type: y mandatory; */
+  /*safari fix*/
   margin: 0;
 }
