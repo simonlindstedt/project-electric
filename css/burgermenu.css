@@ -1,46 +1,145 @@
-.navigation {
-    padding:0;
-    line-height:50px;
-    z-index:2;
-}
-
-@media only screen and (min-width: 768px )
-{
-.hamburger {
+@media only screen and (min-width: 768px) {
+  #burgerMenu {
     display: none;
-
-}
+  }
+  #menuToggle input {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .navbar {
-      display: none;
+    display: none;
+  }
 
+  #navigation {
+    /* Felsök varför det blir
+    vitt under första header
+    display: block;
+    padding: 16px;
+    font-family: sans-serif;
+    color: white; */
+  }
+
+  #menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: left 0.3s ease;
+    -moz-user-select: left 0.3s ease;
+    -ms-user-select: left 0.3s ease;
+    user-select: none;
+  }
+
+  #menuToggle a {
+    text-decoration: none;
+    color: black;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+  }
+
+  #menuToggle a:hover {
+    color: black;
+  }
+
+  #menuToggle input {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0; /* Göm input */
+    z-index: 2; /* Placera över hamburger */
+    -webkit-touch-callout: none;
+  }
+  #menuToggle label {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+  #menuToggle label span {
+    display: none;
+  }
+
+  /*
+ * Hamburger
+ */
+
+  #menuToggle label div {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 6px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    -webkit-transform-origin: 4px 0px;
+    -ms-transform-origin: 4px 0px;
+    transform-origin: 4px 0px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #menuToggle label div:first-child {
+    -webkit-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle label div:nth-child(2) {
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle input:checked + label div {
+    background: #232323;
+  }
 }
 
-/* <nav>
+/* Outside media? */
 
-      <div>
-        <button class="button">&#9993;</button>
-      </div>
+#menu {
+  position: absolute;
+  width: 100%;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #f5f5f5;
+  opacity: 50%;
+  list-style-type: none;
+  left: -100%;
+  -webkit-transition: left 0.3s ease;
+  -o-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
 
-      <ul>
-        <li>
-          <a href="#first">First</a>
-        </li>
-        <li>
-          <a href="#second">Second</a>
-        </li>
-        <li>
-          <a href="#third">Third</a>
-        </li>
-        <li>
-          <a href="#forth">Forth</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+#menu li {
+  padding: 20px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul {
+  left: 0;
+}
+
+/* 
+
+----------------------------------------
+-------------For reference--------------
+----------------------------------------
+
+<nav>
+
+      
       <div role="burgerMenu">
         <!---Optimera-->
         <div id="menuToggle">

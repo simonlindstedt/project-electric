@@ -1,25 +1,25 @@
-let ind = 1;
+let colorIndex = 1;
 
-showColor(ind);
+showColor(colorIndex);
 
 function showColor(number) {
   image(number);
 }
 
 function image(number) {
-  ind = number - 1;
-  const slides = document.querySelectorAll(".slide");
+  colorIndex = number - 1;
+  const colorVariant = document.querySelectorAll(".color-variant");
   const colorPicks = document.querySelectorAll(".color-pick");
 
-  slides.forEach(function (slide) {
+  colorVariant.forEach(function (slide) {
     slide.style.display = "none";
   });
 
   colorPicks.forEach(function (colorPick) {
-    colorPick.classList.remove("active");
+    colorPick.classList.remove("color-pick-active");
   });
 
-  slides[ind].style.display = "block";
+  colorVariant[colorIndex].style.display = "block";
 
-  colorPicks[ind].classList.toggle("active");
+  colorPicks[colorIndex].classList.toggle("color-pick-active");
 }

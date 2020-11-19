@@ -13,22 +13,29 @@
   </head>
   <body>
     <nav>
-      <div class="navigation">
-        <div class="hamburger">
-          <div class="burgerMenuToggle">
-            <span></span>
+      <div role="navigation">
+        <div id="menuToggle">
+          <input name="toggle" type="checkbox" />
+          <label for="toggle">
+            <span>menu</span>
             <div></div>
             <div></div>
             <div></div>
-          </div>
-        </div>
-        <div class="navbar">
-          <ul>
-            <li>Hello one</li>
-            <li>Hello two</li>
-            <li>Hello three</li>
+          </label>
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="index-sv.html"><li>Svenska</li></a>
           </ul>
         </div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li>Hello one</li>
+          <li>Hello two</li>
+          <li>Hello three</li>
+        </ul>
       </div>
       <div class="contact-button">
         <svg
@@ -41,7 +48,7 @@
           <path
             d="M12.5 14L308 213L604 14M16 408H600C604.418 408 608 404.418 608 400V16C608 11.5817 604.418 8 600 8H16C11.5817 8 8 11.5817 8 16V400C8 404.418 11.5817 408 16 408Z"
             stroke="white"
-            stroke-width="16"
+            stroke-width="32"
           />
         </svg>
         <form class="contact-content">
@@ -64,51 +71,50 @@
       <section class="grid">
         <div class="grid-item full">
           <img
-            class="cover"
-            src="/assets/Preview/Terrafugia_preview_combine.jpg"
+            class="cover slide"
+            src="/assets/Preview/Layer 1@0.75x.jpg"
             alt=""
           />
-          <div class="text-box">
-            <h2>object one</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
-              consectetur.
-            </p>
+          <img
+            class="cover slide"
+            src="/assets/Preview/Layer 2@0.75x.jpg"
+            alt=""
+          />
+          <img
+            class="cover slide"
+            src="/assets/Preview/Layer 3@0.75x.jpg"
+            alt=""
+          />
+          <img
+            class="cover slide"
+            src="/assets/Preview/Layer 4@0.75x.jpg"
+            alt=""
+          />
+          <div class="gallery-nav">
+            <a class="gallery-nav-button" onclick="changeImage(-1)">&#10094;</a>
+            <a class="gallery-nav-button" onclick="changeImage(1)">&#10095;</a>
           </div>
         </div>
         <div class="grid-item full">
           <img
-            class="cover"
-            src="/assets/Preview/miljöbild_preview.jpg"
+            class="cover color-variant"
+            src="assets/Preview/White v1.jpg"
             alt=""
-            style="object-position: left"
           />
-          <div class="text-box">
-            <h2>object one second</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam,
-              consectetur.
-            </p>
-          </div>
-        </div>
-        <div class="grid-item full">
-          <img class="cover" src="/assets/Preview/protot2.jpg" alt="" />
-          <div class="text-box" style="color: black">
-            <h2>object two</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Veritatis sunt laborum minus cum a quam?
-            </p>
-          </div>
-        </div>
-        <div class="grid-item full">
-          <img class="cover slide" src="assets/Preview/White v1.jpg" alt="" />
-          <img class="cover slide" src="assets/Preview/Black v1.jpg" alt="" />
-          <img class="cover slide" src="assets/Preview/Brown v1.jpg" alt="" />
-          <div class="slide-nav">
-            <div class="color-pick white" onclick="showColor(1)"></div>
-            <div class="color-pick black" onclick="showColor(2)"></div>
-            <div class="color-pick brown" onclick="showColor(3)"></div>
+          <img
+            class="cover color-variant"
+            src="assets/Preview/Black v1.jpg"
+            alt=""
+          />
+          <img
+            class="cover color-variant"
+            src="assets/Preview/Brown v1.jpg"
+            alt=""
+          />
+          <div class="color-nav">
+            <a class="color-pick white" onclick="showColor(1)"></a>
+            <a class="color-pick black" onclick="showColor(2)"></a>
+            <a class="color-pick brown" onclick="showColor(3)"></a>
           </div>
         </div>
       </section>
@@ -121,6 +127,7 @@
     </main>
   </body>
   <script src="js/contactButton.js"></script>
-  <script src="js/colorPicker.js"></script>
   <script src="js/hamburger.js"></script>
+  <script src="js/colorPicker.js"></script>
+  <script src="js/slideShow.js"></script>
 </html>
