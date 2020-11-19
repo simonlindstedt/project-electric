@@ -1,8 +1,8 @@
 let ind = 1;
 
-showImage(ind);
+showColor(ind);
 
-function showImage(number) {
+function showColor(number) {
   image(number);
 }
 
