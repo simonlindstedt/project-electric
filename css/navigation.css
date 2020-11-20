@@ -1,123 +1,147 @@
-/* Navigation */
-
 nav {
-  position: relative;
+  position: static;
+  width: 100%;
 }
 
-.navbar {
+nav a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-button {
+  user-select: none;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin: 16px;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.navigation-content {
+  display: none;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: space-evenly;
   position: fixed;
   top: 0;
-  z-index: 1;
-  width: 100%;
-  height: 32px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /*safari fix*/
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.navbar ul {
-  margin: 0;
-  height: inherit;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navbar li {
-  margin: 0px 24px;
-  padding: 8px;
-  color: white;
-}
-
-/* SYMBOL FÖR MAIL */
-
-/* .button {
-  position: absolute;
-  font-size: 3rem;
-  text-align: center;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: pink;
-  width: 64px;
-  height: 64px;
-  border-radius: 100%;
-  border: none;
-}
-
-.button:hover {
-  background-color: #274046;
-} */
-
-/* button {
-  color: var(--husBlue);
-  position: absolute;
   right: 0;
-  margin-right: 40px;
-  margin-top: 550px;
-} */
-
-.contact-button {
-  cursor: pointer;
   z-index: 1;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 24px;
-  width: 64px;
-  height: 64px;
-  border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px); /*safari fix*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all;
-  transition-duration: 0.2s;
-}
-
-.contact-button svg {
-  width: 36px;
-}
-
-.contact-button-active {
-  cursor: default;
+  width: calc(100% - 32px);
+  height: fit-content;
+  padding: 64px 0px 32px 24px;
+  margin: 16px;
   border-radius: 8px;
-  width: 300px;
-  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  font-size: 3rem;
 }
 
-.contact-button-active svg {
+.navigation-content li {
+  margin: 0px 0px 64px 0px;
+}
+
+.contact-form {
   display: none;
 }
 
-.contact-content {
+.menu-button.active {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 8px;
+}
+
+.navigation-content.active {
+  display: flex;
+}
+
+li.contact svg {
   display: none;
-  color: white;
 }
 
-form.contact-content input,
-button {
-  margin-bottom: 16px;
-}
+@media only screen and (min-width: 800px) {
+  .menu-button {
+    display: none;
+  }
 
-.contact-content-active {
-  display: flex;
-  flex-direction: column;
-}
+  .navigation-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: none;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    border-radius: 0%;
+    font-size: 1.5rem;
+  }
 
-.exit {
-  position: absolute;
-  bottom: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: salmon;
-  margin: 0px auto;
-  cursor: pointer;
-  width: 32px;
-  height: 32px;
-  border-radius: 100%;
+  .navigation-content li {
+    margin: 8px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+  }
+
+  .contact-form {
+    display: none;
+    color: white;
+    z-index: 0;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    margin: 16px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 16px;
+  }
+
+  li.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    margin: 16px;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+  }
+
+  li.contact a {
+    display: none;
+  }
+
+  li.contact svg {
+    width: 32px;
+    display: block;
+  }
+
+  li.contact.active {
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .contact-form.active {
+    display: flex;
+  }
 }
