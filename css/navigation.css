@@ -30,8 +30,8 @@ nav {
   right: 0;
   z-index: 1;
   width: calc(100% - 32px);
-  height: fit-content;
-  padding: 64px 0px 32px 24px;
+  height: calc(100vh - 32px);
+  padding: 64px 24px 32px 24px;
   margin: 16px;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.5);
