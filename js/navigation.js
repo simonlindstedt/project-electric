@@ -3,7 +3,7 @@ const navigationContent = document.querySelector(".navigation-content");
 const links = navigationContent.querySelectorAll("a");
 const contactButton = navigationContent.querySelector("li.contact");
 const contactForm = document.querySelector(".contact-form");
-const bp = 800;
+const bp = 900;
 
 windowCheck(bp);
 

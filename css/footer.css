@@ -1,0 +1,16 @@
+footer {
+  scroll-snap-align: end;
+  background-color: var(--husBlue);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+footer h2 {
+  margin: 0px 0px 24px 0px;
+}
+
+footer a {
+  margin: 0px 0px 8px 0px;
+}

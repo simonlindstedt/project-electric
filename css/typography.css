@@ -20,3 +20,16 @@ a:visited {
 h1 {
   font-size: 3rem;
 }
+
+header h1 {
+  color: white;
+}
+
+footer h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+footer a {
+  font-size: 1.5rem;
+}

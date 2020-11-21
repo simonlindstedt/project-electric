@@ -18,11 +18,7 @@ img.cover {
   object-fit: cover;
 }
 
-header h1 {
-  color: white;
-}
-
-footer {
+/* footer {
   position: relative;
   scroll-snap-align: end;
   width: 100%;
@@ -54,4 +50,4 @@ footer a {
   width: 48px;
   fill: var(--grey);
   margin-right: 12px;
-}
+} */
