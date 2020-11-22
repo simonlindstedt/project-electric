@@ -13,14 +13,49 @@
   </head>
   <body>
     <nav>
-      <div class="menu-button">🦄</div>
+      <div class="menu-button">
+        <svg
+          width="200"
+          height="160"
+          viewBox="0 0 200 160"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 16H200M0 80H200M0 144H200"
+            stroke="white"
+            stroke-width="16"
+          />
+        </svg>
+      </div>
       <ul class="navigation-content">
-        <li><a href="#temp">item one</a></li>
-        <li><a href="#temp">item two</a></li>
-        <li><a href="#temp">item three</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tech">Technology</a></li>
+        <li><a href="#interior">Interior</a></li>
+        <li><a href="#temp">Design</a></li>
+        <li><a href="#merch">Merchandise</a></li>
+        <li class="swedish">
+          <a href="index-sv.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="auto"
+              viewBox="0 0 16 10"
+            >
+              <rect width="16" height="10" fill="#006aa7" />
+              <rect width="2" height="10" x="5" fill="#fecc00" />
+              <rect width="16" height="2" y="4" fill="#fecc00" />
+            </svg>
+          </a>
+        </li>
+        <form class="contact-form">
+          <label for="mail">Want a car?</label>
+          <input type="mail" id="mail" name="mail" />
+          <button>submit</button>
+        </form>
         <li class="contact">
-          <a href="#contact">contact</a
-          ><svg
+          <a href="#contact">Contact</a>
+          <svg
             width="616"
             height="416"
             viewBox="0 0 616 416"
@@ -35,41 +70,37 @@
           </svg>
         </li>
       </ul>
-      <form class="contact-form">
-        <label for="mail">Want a car?</label>
-        <input type="mail" id="mail" name="mail" />
-        <button>submit</button>
-      </form>
     </nav>
-    <header>
+    <header id="home">
       <img
         class="cover"
-        src="assets/Preview/skog_testrendering1.jpg"
-        style="object-position: center"
+        src="assets/images/exteriör/bridge_fog@0.75x.jpg"
+        alt=""
       />
       <h1>electric</h1>
+      <h2>by peugeot</h2>
     </header>
     <main>
-      <section class="grid">
-        <div class="grid-item full">
+      <section class="grid" id="tech">
+        <div class="grid-item full gallery">
           <img
             class="cover slide"
-            src="/assets/Preview/Layer 1@0.75x.jpg"
+            src="/assets/images/overlay/overlay1@0.75x.jpg"
             alt=""
           />
           <img
             class="cover slide"
-            src="/assets/Preview/Layer 2@0.75x.jpg"
+            src="/assets/images/overlay/overlay2@0.75x.jpg"
             alt=""
           />
           <img
             class="cover slide"
-            src="/assets/Preview/Layer 3@0.75x.jpg"
+            src="/assets/images/overlay/overlay3@0.75x.jpg"
             alt=""
           />
           <img
             class="cover slide"
-            src="/assets/Preview/Layer 4@0.75x.jpg"
+            src="/assets/images/overlay/overlay4@0.75x.jpg"
             alt=""
           />
           <div class="gallery-nav">
@@ -77,40 +108,55 @@
             <a class="gallery-nav-button" onclick="changeImage(1)">&#10095;</a>
           </div>
         </div>
-        <div class="grid-item full">
+        <div class="grid-item full gallery" id="interior">
           <img
             class="cover color-variant"
-            src="assets/Preview/White v1.jpg"
+            src="assets/images/interior/white@0.75x.jpg"
             alt=""
           />
           <img
             class="cover color-variant"
-            src="assets/Preview/Black v1.jpg"
+            src="assets/images/interior/black@0.75x.jpg"
             alt=""
           />
           <img
             class="cover color-variant"
-            src="assets/Preview/Brown v1.jpg"
+            src="assets/images/interior/brown@0.75x.jpg"
             alt=""
           />
-          <div class="color-nav bottom">
+          <div class="color-nav">
             <a class="color-pick white" onclick="showColor(1)"></a>
             <a class="color-pick black" onclick="showColor(2)"></a>
             <a class="color-pick brown" onclick="showColor(3)"></a>
           </div>
         </div>
+        <div class="grid-item full" id="merch">
+          <img
+            class="cover"
+            src="/assets/images/merch/merch_bag@0.33x.jpg"
+            alt=""
+          />
+        </div>
         <footer class="full">
           <h2>Contact</h2>
           <a href="tel:0700000000">0700000000</a>
           <a href="mailto:electric@peugeot.com">electric@peugeot.com</a>
+          <a href="index-sv.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="45"
+              height="45"
+              viewBox="0 0 16 10"
+            >
+              <rect width="16" height="10" fill="#006aa7" />
+              <rect width="2" height="10" x="5" fill="#fecc00" />
+              <rect width="16" height="2" y="4" fill="#fecc00" />
+
+              <path d="" stroke="" stroke-width="" />
+            </svg>
+          </a>
         </footer>
       </section>
-      <!-- <footer id="contact">
-        <h2>Contact</h2>
-        <a href="tel:0700000000">0700000000</a>
-        <a href="mailto:electric@peugeot.com">electric@peugeot.com</a>
-        <div class="social-media"></div>
-      </footer> -->
     </main>
   </body>
   <script src="js/navigation.js"></script>

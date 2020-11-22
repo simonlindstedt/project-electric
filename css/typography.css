@@ -17,11 +17,21 @@ a:visited {
   color: white;
 }
 
-h1 {
-  font-size: 3rem;
+header h1 {
+  margin: 0;
+  font-family: "Dosis";
+  font-weight: 700;
+  font-size: 4rem;
+  color: white;
 }
 
-header h1 {
+nav a {
+  font-weight: 700;
+}
+
+header h2 {
+  margin: 0;
+  font-family: "Dosis";
   color: white;
 }
 
@@ -32,4 +42,25 @@ footer h2 {
 
 footer a {
   font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 900px) {
+  nav a {
+    font-weight: 900;
+  }
+
+  .contact-form input {
+    color: white;
+  }
+
+  .contact-form label {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .contact-form button {
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+  }
 }
