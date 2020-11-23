@@ -33,6 +33,9 @@ section.grid {
   .full {
     grid-column: span 6;
   }
+}
+
+@media only screen and (orientation: landscape) {
   .gallery img.cover {
     height: 100vh;
   }

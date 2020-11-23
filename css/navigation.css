@@ -164,6 +164,10 @@ li.contact svg {
 }
 
 @media only screen and (min-width: 900px) {
+  .gallery img.cover {
+    height: 100vh;
+  }
+
   .menu-button {
     display: none;
   }
@@ -288,13 +292,22 @@ li.contact svg {
   .color-nav {
     background-color: rgba(0, 0, 0, 0);
     justify-content: flex-start;
-    backdrop-filter: none;
   }
 
   .gallery-nav {
     height: 100vh;
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: none;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .gallery-nav {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .color-nav {
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: flex-start;
   }
 }
