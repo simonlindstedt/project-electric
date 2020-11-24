@@ -1,0 +1,21 @@
+@supports (-webkit-touch-callout: none) {
+  header {
+    height: -webkit-fill-available;
+  }
+
+  img.cover {
+    height: -webkit-fill-available;
+  }
+
+  .grid-item {
+    height: -webkit-fill-available;
+  }
+
+  .gallery img.cover {
+    height: -webkit-fill-available;
+  }
+
+  .navigation-content {
+    height: -webkit-fill-available;
+  }
+}

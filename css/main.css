@@ -13,28 +13,11 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 body {
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   /*safari fix*/
   margin: 0;
-}
-
-@supports (-webkit-touch-callout: none) {
-  header {
-    min-height: -webkit-fill-available;
-  }
-
-  img.cover {
-    min-height: -webkit-fill-available;
-  }
-
-  .grid-item {
-    min-height: -webkit-fill-available;
-  }
-  .gallery img.cover {
-    min-height: -webkit-fill-available;
-  }
 }
