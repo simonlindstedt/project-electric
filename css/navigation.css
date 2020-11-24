@@ -35,7 +35,8 @@ nav {
   right: 0;
   z-index: 1;
   width: calc(100% - 32px);
-  height: calc(100vh - 32px);
+  /* height: calc(100vh - 32px); */
+  min-height: calc(100vh - 32px);
   padding: 64px 24px 32px 24px;
   margin: 16px;
   border-radius: 8px;
@@ -164,10 +165,6 @@ li.contact svg {
 }
 
 @media only screen and (min-width: 900px) {
-  .gallery img.cover {
-    height: 100vh;
-  }
-
   .menu-button {
     display: none;
   }
@@ -180,7 +177,8 @@ li.contact svg {
     background-color: rgba(0, 0, 0, 0);
     backdrop-filter: none;
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
+    min-height: fit-content;
     margin: 0;
     padding: 0px;
     border-radius: 0%;
@@ -277,37 +275,22 @@ li.contact svg {
     display: flex;
   }
 
+  li.swedish,
   li.swedish {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  li.brittish {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .color-nav {
     background-color: rgba(0, 0, 0, 0);
     justify-content: flex-start;
   }
 
   .gallery-nav {
-    height: 100vh;
+    /* height: 100vh; */
+    min-height: 100vh;
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
-  }
-}
-
-@media only screen and (orientation: landscape) {
-  .gallery-nav {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  .color-nav {
-    background-color: rgba(0, 0, 0, 0);
-    justify-content: flex-start;
   }
 }

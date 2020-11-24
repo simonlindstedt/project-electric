@@ -30,24 +30,10 @@
       </div>
       <ul class="navigation-content">
         <li><a href="#home">Home</a></li>
+        <li><a href="#design">Design</a></li>
         <li><a href="#tech">Technology</a></li>
         <li><a href="#interior">Interior</a></li>
-        <li><a href="#temp">Design</a></li>
         <li><a href="#merch">Merchandise</a></li>
-        <li class="swedish">
-          <a href="index-sv.html">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="auto"
-              viewBox="0 0 16 10"
-            >
-              <rect width="16" height="10" fill="#006aa7" />
-              <rect width="2" height="10" x="5" fill="#fecc00" />
-              <rect width="16" height="2" y="4" fill="#fecc00" />
-            </svg>
-          </a>
-        </li>
         <form class="contact-form">
           <label for="mail">Want a car?</label>
           <input type="mail" id="mail" name="mail" />
@@ -73,16 +59,81 @@
     </nav>
     <header id="home">
       <img
-        class="cover"
-        src="/assets/images/exterior/bridge_fog@0.75x.jpg"
+        src="/assets/images/exterior/bridge_fog@1.jpg"
         alt=""
+        srcset="
+          /assets/images/exterior/bridge_fog@1.jpg     2500w,
+          /assets/images/exterior/bridge_fog@0.75x.jpg 1800w,
+          /assets/images/exterior/bridge_fog@0.5x.jpg  1200w,
+          /assets/images/exterior/bridge_fog@0.33x.jpg  800w
+        "
+        sizes="
+        (max-width: 800px) 800w,
+        (max-width: 1200px) 1200w,
+        (max-width: 1800px) 1800w,
+        2500w
+        "
+        class="cover"
       />
       <h1>electric</h1>
       <h2>by peugeot</h2>
     </header>
     <main>
-      <section class="grid" id="tech">
-        <div class="grid-item full gallery">
+      <section class="grid">
+        <div class="grid-item full" id="design">
+          <img
+            src="/assets/images/exterior/road_right@1.jpg"
+            alt=""
+            srcset="
+              /assets/images/exterior/road_right@1.jpg     2500w,
+              /assets/images/exterior/road_right@0.75x.jpg 1800w,
+              /assets/images/exterior/road_right@0.5x.jpg  1200w,
+              /assets/images/exterior/road_right@0.33x.jpg  800w
+            "
+            sizes="
+            (max-width: 800px) 800w,
+            (max-width: 1200px) 1200w,
+            (max-width: 1800px) 1800w,
+            2500w
+            "
+            class="cover"
+            style="object-position: right"
+          />
+          <div class="text-box" id="design">
+            <h2>design</h2>
+            <p>
+              Peugeot is bringing car driving to the next level. We are on the
+              go for the future.
+            </p>
+            <p>
+              Our aim is to become one of the world’s most innovative companies.
+              And now we are proud to present our car for the future.
+            </p>
+          </div>
+        </div>
+        <div class="grid-item full" id="tech">
+          <img
+            src="/assets/images/exterior/flying@0.75x.jpg"
+            alt=""
+            srcset="
+              /assets/images/exterior/flying@0.75x.jpg 2500w,
+              /assets/images/exterior/flying@0.5x.jpg  1800w,
+              /assets/images/exterior/flying@0.33.jpg  1200w
+            "
+            sizes="
+            (max-width: 1200px) 1200w,
+            (max-width: 1800px) 1800w,
+            (max-width: 2500px) 2500w,
+            "
+            class="cover"
+            style="object-position: left"
+          />
+          <div class="text-box" id="tech">
+            <h2>technology</h2>
+            <p>Highly advanced, it flies!</p>
+          </div>
+        </div>
+        <!-- <div class="grid-item full gallery" id="tech">
           <img
             class="cover slide"
             src="/assets/images/overlay/overlay1@0.75x.jpg"
@@ -107,23 +158,27 @@
             <a class="gallery-nav-button" onclick="changeImage(-1)">&#10094;</a>
             <a class="gallery-nav-button" onclick="changeImage(1)">&#10095;</a>
           </div>
-        </div>
+        </div> -->
         <div class="grid-item full gallery" id="interior">
           <img
-            class="cover color-variant"
             src="/assets/images/interior/white@0.75x.jpg"
             alt=""
+            class="cover color-variant"
           />
           <img
-            class="cover color-variant"
             src="/assets/images/interior/black@0.75x.jpg"
             alt=""
+            class="cover color-variant"
           />
           <img
-            class="cover color-variant"
             src="/assets/images/interior/brown@0.75x.jpg"
             alt=""
+            class="cover color-variant"
           />
+          <div class="text-box" id="interior">
+            <h2>interior</h2>
+            <p>Pick and choose</p>
+          </div>
           <div class="color-nav">
             <a class="color-pick white" onclick="showColor(1)"></a>
             <a class="color-pick black" onclick="showColor(2)"></a>
@@ -136,11 +191,19 @@
             src="/assets/images/merch/merch_bag@0.33x.jpg"
             alt=""
           />
+          <div class="text-box" id="merch">
+            <h2>merchandise</h2>
+            <p>
+              Looks great, <br />
+              with everything you own
+            </p>
+          </div>
         </div>
         <footer class="full">
           <h2>Contact</h2>
           <a href="tel:0700000000">0700000000</a>
           <a href="mailto:electric@peugeot.com">electric@peugeot.com</a>
+          <a>view in other languages:</a>
           <a href="index-sv.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +214,6 @@
               <rect width="16" height="10" fill="#006aa7" />
               <rect width="2" height="10" x="5" fill="#fecc00" />
               <rect width="16" height="2" y="4" fill="#fecc00" />
-
               <path d="" stroke="" stroke-width="" />
             </svg>
           </a>
@@ -162,5 +224,5 @@
   <script src="js/navigation.js"></script>
   <script src="js/hamburger.js"></script>
   <script src="js/colorPicker.js"></script>
-  <script src="js/slideShow.js"></script>
+  <!-- <script src="js/slideShow.js"></script> -->
 </html>

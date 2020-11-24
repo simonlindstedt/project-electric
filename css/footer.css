@@ -1,16 +1,19 @@
 footer {
+  position: relative;
   scroll-snap-align: end;
   background-color: var(--husBlue);
   height: 300px;
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 32px;
 }
 
 footer h2 {
   margin: 0px 0px 24px 0px;
+  text-decoration: underline;
 }
 
 footer a {
   margin: 0px 0px 8px 0px;
+  color: white;
 }

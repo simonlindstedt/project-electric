@@ -17,6 +17,24 @@ html {
 }
 
 body {
-  scroll-snap-type: y mandatory; /*safari fix*/
+  scroll-snap-type: y mandatory;
+  /*safari fix*/
   margin: 0;
+}
+
+@supports (-webkit-touch-callout: none) {
+  header {
+    min-height: -webkit-fill-available;
+  }
+
+  img.cover {
+    min-height: -webkit-fill-available;
+  }
+
+  .grid-item {
+    min-height: -webkit-fill-available;
+  }
+  .gallery img.cover {
+    min-height: -webkit-fill-available;
+  }
 }

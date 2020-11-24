@@ -6,19 +6,24 @@ section.grid {
 }
 
 .grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   scroll-snap-align: start;
   position: relative;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  min-height: 100vh;
 }
 
 .text-box {
-  padding: 48px 24px;
+  padding: 24px;
   color: white;
 }
 
 .gallery img.cover {
-  height: calc(100vh - 80px);
+  /* height: calc(100vh - 80px); */
+  min-height: calc(100vh - 80px);
 }
 
 @media only screen and (min-width: 900px) {
@@ -26,6 +31,11 @@ section.grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
   }
+
+  .gallery img.cover {
+    min-height: inherit;
+  }
+
   .half {
     grid-column: span 3;
   }
@@ -35,8 +45,8 @@ section.grid {
   }
 }
 
-@media only screen and (orientation: landscape) {
+/* @media only screen and (orientation: landscape) {
   .gallery img.cover {
     height: 100vh;
   }
-}
+} */
