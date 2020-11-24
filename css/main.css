@@ -13,11 +13,20 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
 }
 
 body {
-  scroll-snap-type: y proximity;
-  /*safari fix*/
   margin: 0;
+}
+
+@media only screen and (min-width: 900px) {
+  /* DESKTOP ONLY UNTIL FIXED */
+  html {
+    scroll-snap-type: y mandatory;
+  }
+
+  body {
+    scroll-snap-type: y mandatory;
+    /*safari fix*/
+  }
 }

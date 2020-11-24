@@ -1,6 +1,6 @@
 footer {
+  scroll-snap-align: start;
   position: relative;
-  scroll-snap-align: end;
   background-color: var(--husBlue);
   height: 300px;
   display: flex;

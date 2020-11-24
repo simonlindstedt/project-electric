@@ -7,9 +7,13 @@ const bp = 900;
 
 windowCheck(bp);
 
-window.onresize = function () {
+window.addEventListener("resize", () => {
   windowCheck(bp);
-};
+});
+
+// window.onresize = function () {
+//   windowCheck(bp);
+// };
 
 function windowCheck(breakPoint) {
   if (window.innerWidth > breakPoint) {
