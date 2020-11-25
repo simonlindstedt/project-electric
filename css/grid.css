@@ -6,15 +6,18 @@ section.grid {
 }
 
 .grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   scroll-snap-align: start;
   position: relative;
   width: 100%;
   height: 100vh;
   /* min-height: 100vh; */
   /* margin-bottom: 32px; */
+}
+
+.grid-item.text {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .text-box {
@@ -36,10 +39,6 @@ section.grid {
   .gallery img.cover {
     height: inherit;
     /* min-height: inherit; */
-  }
-
-  .half {
-    grid-column: span 3;
   }
 
   .full {

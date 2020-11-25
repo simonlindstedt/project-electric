@@ -13,20 +13,22 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 body {
   margin: 0;
+  scroll-snap-type: y mandatory;
 }
 
-@media only screen and (min-width: 900px) {
+@supports (-webkit-touch-callout: none) {
   /* DESKTOP ONLY UNTIL FIXED */
   html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: none;
   }
 
   body {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: none;
     /*safari fix*/
   }
 }
