@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="/css/typography.css" />
     <link rel="stylesheet" href="/css/navigation.css" />
     <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/grid.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <!-- <link rel="stylesheet" href="/css/safari-fix.css" /> -->
     <link
       rel="shortcut icon"
       href="/assets/icons/logotypElectric.svg"
@@ -21,29 +20,84 @@
     <nav>
       <div class="menu-button">
         <svg
-          width="200"
-          height="160"
-          viewBox="0 0 200 160"
+          width="850"
+          height="850"
+          viewBox="0 0 850 850"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
+          <rect
+            x="334.49"
+            y="758.755"
+            width="300"
+            height="128"
+            transform="rotate(-45 334.49 758.755)"
+            fill="white"
+          />
+          <rect
+            x="456.06"
+            y="212.814"
+            width="128"
+            height="427.812"
+            transform="rotate(-45 456.06 212.814)"
+            fill="white"
+          />
+          <rect
+            x="125.187"
+            y="543.794"
+            width="300"
+            height="127.944"
+            transform="rotate(-45 125.187 543.794)"
+            fill="white"
+          />
+          <rect
+            x="1.10986"
+            y="425"
+            width="128"
+            height="481.637"
+            transform="rotate(-45 1.10986 425)"
+            fill="white"
+          />
+          <rect
+            x="1.10986"
+            y="425"
+            width="428"
+            height="127.944"
+            transform="rotate(-45 1.10986 425)"
+            fill="white"
+          />
+          <rect
+            x="334.491"
+            y="91.2454"
+            width="128"
+            height="127.944"
+            transform="rotate(-45 334.491 91.2454)"
+            fill="white"
+          />
           <path
-            d="M0 16H200M0 80H200M0 144H200"
-            stroke="white"
-            stroke-width="16"
+            d="M334.491 334.49L425 243.98L727.642 546.622L637.132 637.132L334.491 334.49Z"
+            fill="white"
+          />
+          <rect
+            x="635.429"
+            y="457.816"
+            width="174.409"
+            height="128"
+            transform="rotate(-45 635.429 457.816)"
+            fill="white"
           />
         </svg>
       </div>
       <ul class="navigation-content">
         <li><a href="#home">Hem</a></li>
+        <li><a href="#design">Design</a></li>
         <li><a href="#tech">Teknologi</a></li>
         <li><a href="#interior">Interiör</a></li>
-        <li><a href="#temp">Design</a></li>
         <li><a href="#merch">Produkter</a></li>
         <form action="" class="contact-form">
-          <label for="mail">Vill du ha en bil?</label>
+          <label for="mail">Vill du köpa en bil?</label>
           <input type="mail" id="mail" name="mail" placeholder="Your email" />
-          <button>skicka</button>
+          <button>submit</button>
         </form>
         <li class="contact">
           <a href="contact.html">Kontakt</a>
@@ -107,14 +161,17 @@
           />
           <div class="text-box" id="design">
             <h2>Design</h2>
-            <p>Peugeot tar bilen till en helt ny nivå. Framtiden är här.</p>
             <p>
-              Vårt mål är att bli ett av världens mest innovativa företag. Vi är
-              stolta över att kunna presentera en bil för framtiden.
+              Peugeot tar din bil till en helt ny nivå. Vi investerar i
+              framtiden
+            </p>
+            <p>
+              Vårt mål är att vara ett av världens mest innovativa företag Nu är
+              vi stolta att kunna presentera framtidens bil
             </p>
           </div>
         </div>
-        <div class="grid-item full" id="tech">
+        <div class="full-page-item" id="tech">
           <img
             src="assets/images/exterior/flying.jpg"
             alt=""
@@ -135,10 +192,10 @@
           />
           <div class="text-box" id="tech">
             <h2>Teknologi</h2>
-            <p>Avancerad teknologi. Ta din bil till skyarna!</p>
+            <p>Avancerad och luftburen!</p>
           </div>
         </div>
-        <div class="grid-item full gallery" id="interior">
+        <div class="full-page-item gallery" id="interior">
           <img
             src="assets/images/interior/white.jpg"
             srcset="
@@ -192,7 +249,7 @@
           />
           <div class="text-box" id="interior">
             <h2>Interiör</h2>
-            <p>Välj bland våra olika interiörer</p>
+            <p>Välj färg på interiören</p>
           </div>
           <div class="color-nav">
             <a class="color-pick white"></a>
@@ -200,30 +257,62 @@
             <a class="color-pick brown"></a>
           </div>
         </div>
-        <div class="grid-item full" id="merch">
-          <img
-            class="cover"
-            src="assets/images/merch/bag.jpg"
-            srcset="
-              assets/images/merch/bag.jpg       2500w,
-              assets/images/merch/bag@0.75x.jpg 1900w,
-              assets/images/merch/bag@0.5x.jpg  1200w,
-              assets/images/merch/bag@0.25x.jpg  700w
-            "
-            sizes="
-          (max-width: 700px) 700w,
-          (max-width: 1200px) 1200w,
-          (max-width: 1900px) 1900w,
-          2500w
-        "
-            alt=""
-          />
+        <div class="full-page-item" id="merch">
+          <div class="grid">
+            <img
+              src="assets/images/merch/glasses.jpg"
+              srcset="
+                assets/images/merch/glasses.jpg       2500w,
+                assets/images/merch/glasses@0.75x.jpg 1900w,
+                assets/images/merch/glasses@0.5x.jpg  1200w,
+                assets/images/merch/glasses@0.25x.jpg  700w
+              "
+              sizes="
+                (max-width: 700px) 700w,
+                (max-width: 1200px) 1200w,
+                (max-width: 1900px) 1900w,
+                2500w
+              "
+              alt=""
+              class="grid-item"
+            />
+            <img
+              src="assets/images/merch/bagLogo.jpg"
+              srcset="
+                assets/images/merch/bagLogo.jpg       2500w,
+                assets/images/merch/bagLogo@0.75x.jpg 1900w,
+                assets/images/merch/bagLogo@0.5x.jpg  1200w,
+                assets/images/merch/bagLogo@0.25x.jpg  700w
+              "
+              sizes="
+                (max-width: 700px) 700w,
+                (max-width: 1200px) 1200w,
+                (max-width: 1900px) 1900w,
+                2500w
+              "
+              alt=""
+              class="grid-item"
+            />
+            <img
+              src="assets/images/merch/bag.jpg"
+              srcset="
+                assets/images/merch/bag.jpg       2500w,
+                assets/images/merch/bag@0.75x.jpg 1900w,
+                assets/images/merch/bag@0.5x.jpg  1200w,
+                assets/images/merch/bag@0.25x.jpg  700w
+              "
+              sizes="
+                (max-width: 700px) 700w,
+                (max-width: 1200px) 1200w,
+                (max-width: 1900px) 1900w,
+                2500w
+              "
+              alt=""
+              class="grid-item"
+            />
+          </div>
           <div class="text-box" id="merch">
-            <h2>Produkter</h2>
-            <p>
-              Oslagbar design, <br />
-              fantastisk kvalitet. Välj bland vårt sortiment
-            </p>
+            <h2>Merchandise</h2>
           </div>
         </div>
       </section>
@@ -232,11 +321,12 @@
       <h2>Kontakt</h2>
       <a href="tel:0700000000">0700000000</a>
       <a href="mailto:electric@peugeot.com">electric@peugeot.se</a>
+      <h5>UK English</h5>
       <a href="index.html">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
-          height="auto"
+          lenght="auto"
           viewBox="0 0 60 30"
         >
           <clipPath id="s">
@@ -259,7 +349,6 @@
             <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
           </g>
         </svg>
-        English
       </a>
     </footer>
   </body>

@@ -24,6 +24,7 @@ nav {
 .menu-button svg {
   width: 32px;
   height: 32px;
+  transition: transform ease-in 0.1s;
 }
 
 .navigation-content {
@@ -122,6 +123,10 @@ a.back {
 .menu-button.active {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 8px;
+}
+
+.menu-button.active svg {
+  transform: rotate(45deg);
 }
 
 .navigation-content.active {
