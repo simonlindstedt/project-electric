@@ -21,14 +21,13 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+/* DESKTOP ONLY UNTIL FIXED */
 @supports (-webkit-touch-callout: none) {
-  /* DESKTOP ONLY UNTIL FIXED */
   html {
     scroll-snap-type: none;
   }
 
   body {
     scroll-snap-type: none;
-    /*safari fix*/
   }
 }
