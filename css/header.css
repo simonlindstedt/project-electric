@@ -11,12 +11,6 @@ header {
   overflow: hidden;
 }
 
-@supports (-webkit-touch-callout: none) {
-  header {
-    height: -webkit-fill-available;
-  }
-}
-
 img.cover {
   position: absolute;
   top: 0;

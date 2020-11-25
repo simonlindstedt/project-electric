@@ -21,8 +21,8 @@ body {
   scroll-snap-type: y mandatory;
 }
 
-/* DESKTOP ONLY UNTIL FIXED */
-/* @supports (-webkit-touch-callout: none) {
+/* NOT MOBILE SAFARI UNTIL FIXED */
+@supports (-webkit-touch-callout: none) {
   html {
     scroll-snap-type: none;
   }
@@ -30,4 +30,4 @@ body {
   body {
     scroll-snap-type: none;
   }
-} */
+}
