@@ -4,11 +4,11 @@ header {
   scroll-snap-align: start;
   width: 100%;
   height: 100vh;
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 img.cover {
@@ -17,7 +17,7 @@ img.cover {
   z-index: -1;
   width: 100%;
   height: inherit;
-  /* min-height: inherit; */
+  overflow: hidden;
   object-fit: cover;
 }
 

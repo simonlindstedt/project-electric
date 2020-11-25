@@ -2,7 +2,7 @@ footer {
   scroll-snap-align: start;
   position: relative;
   background-color: var(--husBlue);
-  height: 300px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 32px;

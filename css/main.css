@@ -22,7 +22,7 @@ body {
 }
 
 /* DESKTOP ONLY UNTIL FIXED */
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) {
   html {
     scroll-snap-type: none;
   }
@@ -30,4 +30,4 @@ body {
   body {
     scroll-snap-type: none;
   }
-}
+} */
