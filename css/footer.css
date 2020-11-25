@@ -8,6 +8,12 @@ footer {
   padding: 32px;
 }
 
+@supports (-webkit-touch-callout: none) {
+  footer {
+    height: -webkit-fill-available;
+  }
+}
+
 footer h2 {
   margin: 0px 0px 24px 0px;
   text-decoration: underline;
