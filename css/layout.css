@@ -36,10 +36,6 @@ h2:last-child {
   margin-top: 96px;
 }
 
-.text-box#merch {
-  justify-self: center;
-}
-
 .grid {
   height: inherit;
   display: grid;
@@ -68,6 +64,8 @@ img.grid-item {
   }
 
   .text-box#design {
+    justify-self: end;
+    margin: 16px;
     width: 300px;
   }
 
