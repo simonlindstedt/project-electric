@@ -19,8 +19,8 @@ html {
 body {
   margin: 0;
   scroll-snap-type: y mandatory;
-  height: 100vh;
-  overflow-y: scroll;
+  /* height: 100vh;
+  overflow-y: scroll; */
 }
 
 /* NOT MOBILE SAFARI UNTIL FIXED */
