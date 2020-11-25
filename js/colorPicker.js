@@ -1,25 +1,32 @@
 let colorIndex = 1;
+const colorPicks = document.querySelectorAll(".color-pick");
+const colorVariants = document.querySelectorAll(".color-variant");
 
 showColor(colorIndex);
 
 function showColor(number) {
-  image(number);
-}
-
-function image(number) {
   colorIndex = number - 1;
-  const colorVariant = document.querySelectorAll(".color-variant");
-  const colorPicks = document.querySelectorAll(".color-pick");
 
-  colorVariant.forEach(function (slide) {
-    slide.style.display = "none";
+  colorVariants.forEach((colorVariant) => {
+    colorVariant.style.display = "none";
   });
 
-  colorPicks.forEach(function (colorPick) {
-    colorPick.classList.remove("color-pick-active");
+  colorPicks.forEach((colorPick) => {
+    colorPick.classList.remove("active");
   });
 
-  colorVariant[colorIndex].style.display = "block";
-
-  colorPicks[colorIndex].classList.toggle("color-pick-active");
+  colorVariants[colorIndex].style.display = "block";
+  colorPicks[colorIndex].classList.toggle("active");
 }
+
+colorPicks.forEach((colorPick) => {
+  colorPick.addEventListener("click", () => {
+    if (colorPick.classList.contains("white")) {
+      showColor(1);
+    } else if (colorPick.classList.contains("black")) {
+      showColor(2);
+    } else if (colorPick.classList.contains("brown")) {
+      showColor(3);
+    }
+  });
+});
