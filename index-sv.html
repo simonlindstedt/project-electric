@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="/css/grid.css" />
     <link rel="stylesheet" href="/css/footer.css" />
     <!-- <link rel="stylesheet" href="/css/safari-fix.css" /> -->
-    <title>Elektrisk</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/icons/logotypElectric.svg"
+      type="svg"
+    />
+    <title>Electric</title>
   </head>
   <body>
     <nav>
@@ -35,13 +40,13 @@
         <li><a href="#interior">Interiör</a></li>
         <li><a href="#temp">Design</a></li>
         <li><a href="#merch">Produkter</a></li>
-        <form class="contact-form">
+        <form action="" class="contact-form">
           <label for="mail">Vill du ha en bil?</label>
-          <input type="mail" id="mail" name="mail" />
+          <input type="mail" id="mail" name="mail" placeholder="Your email" />
           <button>skicka</button>
         </form>
         <li class="contact">
-          <a href="#contact">Kontakt</a>
+          <a href="contact.html">Kontakt</a>
           <svg
             width="616"
             height="416"
@@ -221,48 +226,42 @@
             </p>
           </div>
         </div>
-        <footer class="full">
-          <h2>Kontakt</h2>
-          <a href="tel:0700000000">0700000000</a>
-          <a href="mailto:electric@peugeot.com">electric@peugeot.se</a>
-          <a href="index.html">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="auto"
-              viewBox="0 0 60 30"
-            >
-              <clipPath id="s">
-                <path d="M0,0 v30 h60 v-30 z" />
-              </clipPath>
-              <clipPath id="t">
-                <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
-              </clipPath>
-              <g clip-path="url(#s)">
-                <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
-                <path
-                  d="M0,0 L60,30 M60,0 L0,30"
-                  stroke="#fff"
-                  stroke-width="6"
-                />
-                <path
-                  d="M0,0 L60,30 M60,0 L0,30"
-                  clip-path="url(#t)"
-                  stroke="#C8102E"
-                  stroke-width="4"
-                />
-                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
-                <path
-                  d="M30,0 v30 M0,15 h60"
-                  stroke="#C8102E"
-                  stroke-width="6"
-                />
-              </g>
-            </svg>
-          </a>
-        </footer>
       </section>
     </main>
+    <footer>
+      <h2>Kontakt</h2>
+      <a href="tel:0700000000">0700000000</a>
+      <a href="mailto:electric@peugeot.com">electric@peugeot.se</a>
+      <a href="index.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="auto"
+          viewBox="0 0 60 30"
+        >
+          <clipPath id="s">
+            <path d="M0,0 v30 h60 v-30 z" />
+          </clipPath>
+          <clipPath id="t">
+            <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
+          </clipPath>
+          <g clip-path="url(#s)">
+            <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+            <path
+              d="M0,0 L60,30 M60,0 L0,30"
+              clip-path="url(#t)"
+              stroke="#C8102E"
+              stroke-width="4"
+            />
+
+            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+          </g>
+        </svg>
+        English
+      </a>
+    </footer>
   </body>
   <script src="js/navigation.js"></script>
   <script src="js/colorPicker.js"></script>

@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="/css/typography.css" />
     <link rel="stylesheet" href="/css/navigation.css" />
     <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/grid.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <!-- <link rel="stylesheet" href="/css/safari-fix.css" /> -->
     <link
       rel="shortcut icon"
       href="/assets/icons/logotypElectric.svg"
@@ -85,8 +84,8 @@
       <h2>by peugeot</h2>
     </header>
     <main>
-      <section class="grid">
-        <div class="grid-item text full" id="design">
+      <section>
+        <div class="full-page-item" id="design">
           <img
             src="assets/images/exterior/right.jpg"
             alt=""
@@ -117,7 +116,7 @@
             </p>
           </div>
         </div>
-        <div class="grid-item text full" id="tech">
+        <div class="full-page-item" id="tech">
           <img
             src="assets/images/exterior/flying.jpg"
             alt=""
@@ -141,7 +140,7 @@
             <p>Highly advanced, it flies!</p>
           </div>
         </div>
-        <div class="grid-item text full gallery" id="interior">
+        <div class="full-page-item gallery" id="interior">
           <img
             src="assets/images/interior/white.jpg"
             srcset="
@@ -203,53 +202,86 @@
             <a class="color-pick brown"></a>
           </div>
         </div>
-        <div class="grid-item text full" id="merch">
-          <img
-            class="cover"
-            src="assets/images/merch/bag.jpg"
-            srcset="
-              assets/images/merch/bag.jpg       2500w,
-              assets/images/merch/bag@0.75x.jpg 1900w,
-              assets/images/merch/bag@0.5x.jpg  1200w,
-              assets/images/merch/bag@0.25x.jpg  700w
-            "
-            sizes="
-          (max-width: 700px) 700w,
-          (max-width: 1200px) 1200w,
-          (max-width: 1900px) 1900w,
-          2500w
-        "
-            alt=""
-          />
+        <div class="full-page-item" id="merch">
+          <div class="grid">
+            <img
+              src="assets/images/merch/bagLogo.jpg"
+              srcset="
+                assets/images/merch/bagLogo.jpg       2500w,
+                assets/images/merch/bagLogo@0.75x.jpg 1900w,
+                assets/images/merch/bagLogo@0.5x.jpg  1200w,
+                assets/images/merch/bagLogo@0.25x.jpg  700w
+              "
+              sizes="
+                (max-width: 700px) 700w,
+                (max-width: 1200px) 1200w,
+                (max-width: 1900px) 1900w,
+                2500w
+              "
+              alt=""
+              class="grid-item"
+            />
+            <img
+              src="assets/images/merch/glasses.jpg"
+              srcset="
+                assets/images/merch/glasses.jpg       2500w,
+                assets/images/merch/glasses@0.75x.jpg 1900w,
+                assets/images/merch/glasses@0.5x.jpg  1200w,
+                assets/images/merch/glasses@0.25x.jpg  700w
+              "
+              sizes="
+                (max-width: 700px) 700w,
+                (max-width: 1200px) 1200w,
+                (max-width: 1900px) 1900w,
+                2500w
+              "
+              alt=""
+              class="grid-item"
+            />
+            <img
+              src="assets/images/merch/bag.jpg"
+              srcset="
+                assets/images/merch/bag.jpg       2500w,
+                assets/images/merch/bag@0.75x.jpg 1900w,
+                assets/images/merch/bag@0.5x.jpg  1200w,
+                assets/images/merch/bag@0.25x.jpg  700w
+              "
+              sizes="
+                (max-width: 700px) 700w,
+                (max-width: 1200px) 1200w,
+                (max-width: 1900px) 1900w,
+                2500w
+              "
+              alt=""
+              class="grid-item"
+            />
+          </div>
           <div class="text-box" id="merch">
             <h2>Merchandise</h2>
-            <p>
-              Looks great, <br />
-              with everything you own
-            </p>
           </div>
         </div>
-        <footer class="full">
-          <h2>Contact</h2>
-          <a href="tel:0700000000">0700000000</a>
-          <a href="mailto:electric@peugeot.com">electric@peugeot.com</a>
-
-          <a href="index-sv.html">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="45"
-              height="45"
-              viewBox="0 0 16 10"
-            >
-              <rect width="16" height="10" fill="#006aa7" />
-              <rect width="2" height="10" x="5" fill="#fecc00" />
-              <rect width="16" height="2" y="4" fill="#fecc00" />
-              <path d="" stroke="" stroke-width="" />
-            </svg>
-          </a>
-        </footer>
       </section>
     </main>
+    <footer>
+      <h2>Contact</h2>
+      <a href="tel:0700000000">0700000000</a>
+      <a href="mailto:electric@peugeot.com">electric@peugeot.com</a>
+
+      <a href="index-sv.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="45"
+          height="45"
+          viewBox="0 0 16 10"
+        >
+          <rect width="16" height="10" fill="#006aa7" />
+          <rect width="2" height="10" x="5" fill="#fecc00" />
+          <rect width="16" height="2" y="4" fill="#fecc00" />
+          <path d="" stroke="" stroke-width="" />
+        </svg>
+        Svenska
+      </a>
+    </footer>
   </body>
   <script src="js/navigation.js"></script>
   <script src="js/colorPicker.js"></script>

@@ -41,7 +41,11 @@ section.grid {
     /* min-height: inherit; */
   }
 
-  .full {
+  .grid-item.full {
     grid-column: span 6;
+  }
+
+  .grid-item.third {
+    grid-column: span 2;
   }
 }

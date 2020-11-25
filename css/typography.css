@@ -44,14 +44,29 @@ header h1 {
   font-size: 4rem;
   color: white;
   animation-name: electric;
-  animation-duration: 7s;
+  animation-duration: 12s;
 }
 
 @keyframes electric {
-  from {
-    color: rgb(241, 217, 79);
+  0% {
+    color: white;
   }
-  to {
+  15% {
+    color: rgb(137, 171, 226);
+  }
+  25% {
+    color: rgb(247, 229, 129);
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: #6a8bc2;
+  }
+  85% {
+    color: rgb(145, 224, 235);
+  }
+  100% {
     color: white;
   }
 }
@@ -99,16 +114,9 @@ footer a {
 }
 
 .text-box {
-  margin: 7px;
-  padding: 8px;
-  height: fit-content;
-  width: fit-content;
+  color: white;
   font-size: 1.1rem;
   line-height: 1.5rem;
-  background-color: rgba(16, 21, 33, 0.6);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border-radius: 8px;
 }
 
 .text-box h2 {
@@ -118,34 +126,6 @@ footer a {
   font-size: 2rem;
 }
 
-.text-box p:last-child {
-  margin-bottom: 0px;
-}
-
-.text-box#design {
-  width: 90%;
-  justify-self: center;
-  align-self: center;
-  margin-bottom: 64px;
-}
-
-.text-box#interior {
-  align-self: end;
-  margin-bottom: 87px;
-}
-
-.text-box#tech {
-  justify-self: center;
-  align-self: end;
-  margin-bottom: 80px;
-}
-
-.text-box#merch {
-  text-align: center;
-  justify-self: center;
-  align-self: center;
-}
-
 @media only screen and (min-width: 900px) {
   nav a {
     font-weight: 900;
@@ -153,19 +133,5 @@ footer a {
 
   .navigation-content li a {
     font-size: 1.3rem;
-  }
-
-  .text-box#design {
-    align-self: start;
-    justify-self: right;
-    width: 300px;
-    height: fit-content;
-  }
-
-  .text-box#tech,
-  .text-box#interior {
-    justify-self: right;
-    align-self: start;
-    margin-bottom: 0px;
   }
 }
