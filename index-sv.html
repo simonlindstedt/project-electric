@@ -3,53 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
-    <title>Electric</title>
-    <style>
-      body {
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: Helvetica, sans-serif;
-      }
-      h1 {
-        font-size: 8rem;
-      }
-      p {
-        font-size: 4rem;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Work in progress</h1>
-    <p id="timeLeft"></p>
-    <script>
-      var endDate = new Date("27 Nov, 2020 09:00:00").getTime();
-
-      var x = setInterval(function () {
-        var now = new Date().getTime();
-        var timeRemaining = endDate - now;
-
-        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor(
-          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
-        );
-        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-        document.getElementById("timeLeft").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-      }, 1000);
-    </script>
-=======
     <link
       rel="shortcut icon"
       href="/assets/icons/logotypElectric.svg"
-      type="image/x-icon"
+      type="svg"
     />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/typography.css" />
@@ -69,54 +26,82 @@
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M333.49 758.755L545.622 546.623L636.132 637.132L424 849.264L333.49 758.755Z"
+          <rect
+            x="334.49"
+            y="758.755"
+            width="300"
+            height="128"
+            transform="rotate(-45 334.49 758.755)"
+            fill="white"
+          />
+          <rect
+            x="456.06"
+            y="212.814"
+            width="128"
+            height="427.812"
+            transform="rotate(-45 456.06 212.814)"
+            fill="white"
+          />
+          <rect
+            x="125.187"
+            y="543.794"
+            width="300"
+            height="127.944"
+            transform="rotate(-45 125.187 543.794)"
+            fill="white"
+          />
+          <rect
+            x="1.10986"
+            y="425"
+            width="128"
+            height="481.637"
+            transform="rotate(-45 1.10986 425)"
+            fill="white"
+          />
+          <rect
+            x="1.10986"
+            y="425"
+            width="428"
+            height="127.944"
+            transform="rotate(-45 1.10986 425)"
+            fill="white"
+          />
+          <rect
+            x="334.491"
+            y="91.2454"
+            width="128"
+            height="127.944"
+            transform="rotate(-45 334.491 91.2454)"
             fill="white"
           />
           <path
-            d="M455.06 212.814L545.569 122.305L848.078 424.813L757.568 515.323L455.06 212.814Z"
+            d="M334.491 334.49L425 243.98L727.642 546.622L637.132 637.132L334.491 334.49Z"
             fill="white"
           />
-          <path
-            d="M124.187 543.794L336.319 331.662L426.789 422.132L214.657 634.264L124.187 543.794Z"
-            fill="white"
-          />
-          <path
-            d="M0.109863 425L90.6195 334.49L431.188 675.059L340.678 765.568L0.109863 425Z"
-            fill="white"
-          />
-          <path
-            d="M0.109863 425L302.751 122.358L393.221 212.828L90.5797 515.47L0.109863 425Z"
-            fill="white"
-          />
-          <path
-            d="M333.491 91.2454L424 0.735718L514.47 91.2056L423.961 181.715L333.491 91.2454Z"
-            fill="white"
-          />
-          <path
-            d="M333.491 334.49L424 243.98L726.642 546.622L636.132 637.132L333.491 334.49Z"
-            fill="white"
-          />
-          <path
-            d="M634.429 457.816L757.755 334.49L848.264 425L724.938 548.326L634.429 457.816Z"
+          <rect
+            x="635.429"
+            y="457.816"
+            width="174.409"
+            height="128"
+            transform="rotate(-45 635.429 457.816)"
             fill="white"
           />
         </svg>
       </div>
-      <form class="contact-form">
-        <label for="mail">Want a car?</label>
-        <input type="email" id="mail" name="mail" placeholder="Your email" />
+      <form action="" class="contact-form">
+        <label for="mail">Vill du köpa en bil?</label>
+        <input type="mail" id="mail" name="mail" placeholder="Your email" />
         <button>submit</button>
       </form>
       <ul class="navigation-content">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#history">History</a></li>
+        <li><a href="#home">Hem</a></li>
         <li><a href="#design">Design</a></li>
-        <li><a href="#overlay">Technology</a></li>
-        <li><a href="#interior">Interior</a></li>
-        <li><a href="#merch">Merchandise</a></li>
+        <li><a href="#overlay">Teknologi</a></li>
+        <li><a href="#interior">Interiör</a></li>
+        <li><a href="#merch">Produkter</a></li>
+
         <li class="contact">
-          <a href="contact.html">Contact</a>
+          <a href="contact.html">Kontakt</a>
           <svg
             width="616"
             height="416"
@@ -127,7 +112,7 @@
             <path
               d="M12.5 14L308 213L604 14M16 408H600C604.418 408 608 404.418 608 400V16C608 11.5817 604.418 8 600 8H16C11.5817 8 8 11.5817 8 16V400C8 404.418 11.5817 408 16 408Z"
               stroke="white"
-              stroke-width="32"
+              stroke-width="16"
             />
           </svg>
         </li>
@@ -138,16 +123,16 @@
         src="/assets/images/exterior/fog.jpg"
         alt="header-exterior"
         srcset="
-          assets/images/exterior/fog.jpg       2400w,
-          assets/images/exterior/fog@0.75x.jpg 1800w,
-          assets/images/exterior/fog@0.5x.jpg  1100w,
-          assets/images/exterior/fog@0.33x.jpg  700w
+          assets/images/exterior/fog.jpg       2500w,
+          assets/images/exterior/fog@0.75x.jpg 1900w,
+          assets/images/exterior/fog@0.5x.jpg  1200w,
+          assets/images/exterior/fog@0.25x.jpg  700w
         "
         sizes="
-          (min-width: 2400px) 2450px,
-          (min-width: 1700px) 1750px,
-          (min-width: 1100px) 1150px,
-          (min-width: 700px) 750px
+        (max-width: 700px) 700w,
+        (max-width: 1200px) 1200w,
+        (max-width: 1900px) 1900w,
+        
         "
         class="cover"
       />
@@ -161,30 +146,29 @@
             src="assets/images/exterior/car_with_people.jpg"
             alt="history"
             srcset="
-              assets/images/exterior/car_with_people.jpg       2400w,
-              assets/images/exterior/car_with_people@0.75x.jpg 1800w,
-              assets/images/exterior/car_with_people@0.5x.jpg  1100w,
-              assets/images/exterior/car_with_people@0.33x.jpg  700w
+              assets/images/exterior/car_with_people.jpg       2500w,
+              assets/images/exterior/car_with_people@0.75x.jpg 1900w,
+              assets/images/exterior/car_with_people@0.5x.jpg  1200w,
+              assets/images/exterior/car_with_people@0.25x.jpg  700w
             "
             sizes="
-              (min-width: 2400px) 2450px,
-              (min-width: 1700px) 1750px,
-              (min-width: 1100px) 1150px,
-              (min-width: 700px) 750px
+            (max-width: 700px) 700w,
+            (max-width: 1200px) 1200w,
+            (max-width: 1900px) 1900w,
+            2500w
             "
             class="cover"
           />
           <div class="text-box" id="history-text">
             <h2>History</h2>
             <p>
-              Peugeot is a brand with history. The first car to carry the
-              Peugeot name was unveiled in 1889, making Peugeot the world's
-              second oldest car manufacturer and the oldest continuous car
-              brand.
+              Peugeot är ett varumärke med en rik historia. Den första bilen
+              från Peugeot kom 1889, vilket gör oss till världens näst äldsta
+              bilproducent och den äldtsa som finns kvar än idag.
             </p>
             <p>
-              Family business is now a global business. Today we are starting a
-              new chapter. Electric; it is the future.
+              Familjeföretaget är nu globalt och nu påbörjar vi ett nytt
+              kapitel. Electric; det är framtiden.
             </p>
           </div>
         </div>
@@ -193,10 +177,10 @@
             src="assets/images/exterior/right.jpg"
             alt="design-exterior"
             srcset="
-              assets/images/exterior/right.jpg       2400w,
-              assets/images/exterior/right@0.75x.jpg 1800w,
-              assets/images/exterior/right@0.5x.jpg  1100w,
-              assets/images/exterior/right@0.33x.jpg  700w
+              assets/images/exterior/right.jpg       2500w,
+              assets/images/exterior/right@0.75x.jpg 1900w,
+              assets/images/exterior/right@0.5x.jpg  1200w,
+              assets/images/exterior/right@0.25x.jpg  700w
             "
             sizes="
               (min-width: 2400px) 2450px,
@@ -209,12 +193,11 @@
           <div class="text-box" id="design-text">
             <h2>Design</h2>
             <p>
-              Peugeot is bringing car driving to the next level. We are on the
-              go for the future.
+              Peugeot tar din bil till en ny nivå. Vi investerar i framtiden.
             </p>
             <p>
-              Our aim is to become one of the world’s most innovative companies.
-              And now we are proud to present our car for the future.
+              Vårt mål är att vara ett av världens mest innovativa företag Nu är
+              vi stolta att kunna presentera framtidens bil.
             </p>
           </div>
         </div>
@@ -223,31 +206,31 @@
             src="assets/images/exterior/car_flying.jpg"
             alt="tech-flying"
             srcset="
-              assets/images/exterior/car_flying.jpg       2400w,
-              assets/images/exterior/car_flying@0.75x.jpg 1800w,
-              assets/images/exterior/car_flying@0.5x.jpg  1100w,
+              assets/images/exterior/car_flying.jpg       2500w,
+              assets/images/exterior/car_flying@0.75x.jpg 1900w,
+              assets/images/exterior/car_flying@0.5x.jpg  1200w,
               assets/images/exterior/car_flying@0.33x.jpg  700w
             "
             sizes="
-              (min-width: 2400px) 2450px,
-              (min-width: 1700px) 1750px,
-              (min-width: 1100px) 1150px,
-              (min-width: 700px) 750px
-            "
+            (min-width: 2400px) 2450px,
+            (min-width: 1700px) 1750px,
+            (min-width: 1100px) 1150px,
+            (min-width: 700px) 750px
+          "
             class="cover"
           />
           <div class="text-box" id="tech-text">
-            <h2>Technology</h2>
-            <p>Highly advanced, and airbourne</p>
+            <h2>Teknologi</h2>
+            <p>Avancerad och luftburen.</p>
           </div>
         </div>
         <div class="full-page-item" id="overlay">
           <img
             src="assets/images/overlay/overlay_with_text.jpg"
             srcset="
-              assets/images/overlay/overlay_with_text.jpg       2400w,
-              assets/images/overlay/overlay_with_text@0.75x.jpg 1800w,
-              assets/images/overlay/overlay_with_text@0.5x.jpg  1100w,
+              assets/images/overlay/overlay_with_text.jpg       2500w,
+              assets/images/overlay/overlay_with_text@0.75x.jpg 1900w,
+              assets/images/overlay/overlay_with_text@0.5x.jpg  1200w,
               assets/images/overlay/overlay_with_text@0.33x.jpg  700w
             "
             sizes="
@@ -263,9 +246,9 @@
             src="assets/images/overlay/transparent.jpg"
             alt="overlay"
             srcset="
-              assets/images/overlay/transparent.jpg       2400w,
-              assets/images/overlay/transparent@0.75x.jpg 1800w,
-              assets/images/overlay/transparent@0.5x.jpg  1100w,
+              assets/images/overlay/transparent.jpg       2500w,
+              assets/images/overlay/transparent@0.75x.jpg 1900w,
+              assets/images/overlay/transparent@0.5x.jpg  1200w,
               assets/images/overlay/transparent@0.33x.jpg  700w
             "
             sizes="
@@ -279,17 +262,18 @@
           />
           <div class="text-box" id="overlay-text">
             <h2>Overlay</h2>
-            <p>Flip your phone for a closer look</p>
+            <p>Vänd din mobil för en bättre bild.</p>
           </div>
         </div>
+
         <div class="full-page-item gallery" id="interior">
           <img
             src="assets/images/interior/white.jpg"
             srcset="
-              assets/images/interior/white.jpg       2400w,
-              assets/images/interior/white@0.75x.jpg 1800w,
-              assets/images/interior/white@0.5x.jpg  1100w,
-              assets/images/interior/white@0.33x.jpg  700w
+              assets/images/interior/white.jpg       2500w,
+              assets/images/interior/white@0.75x.jpg 1900w,
+              assets/images/interior/white@0.5x.jpg  1200w,
+              assets/images/interior/white@0.25x.jpg  700w
             "
             sizes="
               (min-width: 2400px) 2450px,
@@ -303,10 +287,10 @@
           <img
             src="assets/images/interior/black.jpg"
             srcset="
-              assets/images/interior/black.jpg       2400w,
-              assets/images/interior/black@0.75x.jpg 1800w,
-              assets/images/interior/black@0.5x.jpg  1100w,
-              assets/images/interior/black@0.33x.jpg  700w
+              assets/images/interior/black.jpg       2500w,
+              assets/images/interior/black@0.75x.jpg 1900w,
+              assets/images/interior/black@0.5x.jpg  1200w,
+              assets/images/interior/black@0.25x.jpg  700w
             "
             sizes="
               (min-width: 2400px) 2450px,
@@ -320,10 +304,10 @@
           <img
             src="assets/images/interior/brown.jpg"
             srcset="
-              assets/images/interior/brown.jpg       2400w,
-              assets/images/interior/brown@0.75x.jpg 1800w,
-              assets/images/interior/brown@0.5x.jpg  1100w,
-              assets/images/interior/brown@0.33x.jpg  700w
+              assets/images/interior/brown.jpg       2500w,
+              assets/images/interior/brown@0.75x.jpg 1900w,
+              assets/images/interior/brown@0.5x.jpg  1200w,
+              assets/images/interior/brown@0.25x.jpg  700w
             "
             sizes="
               (min-width: 2400px) 2450px,
@@ -335,8 +319,8 @@
             class="cover color-variant"
           />
           <div class="text-box" id="interior-text">
-            <h2>Interior</h2>
-            <p>Choose your prefered color</p>
+            <h2>Interiör</h2>
+            <p>Välj färg på interiören.</p>
           </div>
           <div class="color-nav">
             <a class="color-pick white"></a>
@@ -349,9 +333,9 @@
             <img
               src="assets/images/merch/glasses.jpg"
               srcset="
-                assets/images/merch/glasses.jpg       2400w,
-                assets/images/merch/glasses@0.75x.jpg 1800w,
-                assets/images/merch/glasses@0.5x.jpg  1100w,
+                assets/images/merch/glasses.jpg       2500w,
+                assets/images/merch/glasses@0.75x.jpg 1900w,
+                assets/images/merch/glasses@0.5x.jpg  1200w,
                 assets/images/merch/glasses@0.33x.jpg  700w
               "
               sizes="
@@ -366,34 +350,34 @@
             <img
               src="assets/images/merch/bag.jpg"
               srcset="
-                assets/images/merch/bag.jpg       2400w,
-                assets/images/merch/bag@0.75x.jpg 1800w,
-                assets/images/merch/bag@0.5x.jpg  1100w,
+                assets/images/merch/bag.jpg       2500w,
+                assets/images/merch/bag@0.75x.jpg 1900w,
+                assets/images/merch/bag@0.5x.jpg  1200w,
                 assets/images/merch/bag@0.33x.jpg  700w
               "
               sizes="
-                (min-width: 2400px) 2450px,
-                (min-width: 1700px) 1750px,
-                (min-width: 1100px) 1150px,
-                (min-width: 700px) 750px
-              "
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
+            "
               alt="merch-bag"
               class="grid-item"
             />
             <img
               src="assets/images/merch/bag.jpg"
               srcset="
-                assets/images/merch/bag.jpg       2400w,
-                assets/images/merch/bag@0.75x.jpg 1800w,
-                assets/images/merch/bag@0.5x.jpg  1100w,
+                assets/images/merch/bag.jpg       2500w,
+                assets/images/merch/bag@0.75x.jpg 1900w,
+                assets/images/merch/bag@0.5x.jpg  1200w,
                 assets/images/merch/bag@0.33x.jpg  700w
               "
               sizes="
-                (min-width: 2400px) 2450px,
-                (min-width: 1700px) 1750px,
-                (min-width: 1100px) 1150px,
-                (min-width: 700px) 750px
-              "
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
+            "
               alt="merch-bag-two"
               class="grid-item"
             />
@@ -405,30 +389,44 @@
       </section>
     </main>
     <footer>
-      <h2>Contact</h2>
+      <h2>Kontakt</h2>
       <a href="tel:0700000000">0700000000</a>
-      <a href="mailto:electric@peugeot.com">electric@peugeot.com</a>
-      <h5>Svenska</h5>
-      <a href="index-sv.html">
+      <a href="mailto:electric@peugeot.com">electric@peugeot.se</a>
+      <h5>UK English</h5>
+      <a href="index.html">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="45"
-          height="45"
-          viewBox="0 0 16 10"
+          width="40"
+          lenght="auto"
+          viewBox="0 0 60 30"
         >
-          <rect width="16" height="10" fill="#006aa7" />
-          <rect width="2" height="10" x="5" fill="#fecc00" />
-          <rect width="16" height="2" y="4" fill="#fecc00" />
-          <path d="" stroke="" stroke-width="" />
+          <clipPath id="s">
+            <path d="M0,0 v30 h60 v-30 z" />
+          </clipPath>
+          <clipPath id="t">
+            <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z" />
+          </clipPath>
+          <g clip-path="url(#s)">
+            <path d="M0,0 v30 h60 v-30 z" fill="#012169" />
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+            <path
+              d="M0,0 L60,30 M60,0 L0,30"
+              clip-path="url(#t)"
+              stroke="#C8102E"
+              stroke-width="4"
+            />
+
+            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+          </g>
         </svg>
       </a>
-
       <div class="social-media">
         <svg
           enable-background="new 0 0 24 24"
-          height="30pt"
+          height="40pt"
           viewBox="0 0 24 24"
-          width="30pt"
+          width="40pt"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
         >
@@ -458,8 +456,8 @@
         <svg
           version="1.1"
           id="Capa_1"
-          height="30pt"
-          width="30pt"
+          height="40pt"
+          width="40pt"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px"
@@ -495,9 +493,9 @@
           <g></g>
         </svg>
         <svg
-          height="30pt"
+          height="40pt"
           viewBox="0 0 512 512.00038"
-          width="30pt"
+          width="40pt"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
         >
@@ -568,10 +566,10 @@
 
       <p class="copyright">Copyright 2020 Electric</p>
     </footer>
-    <script src="js/navigation.js"></script>
-    <script src="js/overlay.js"></script>
-    <script src="js/multiButton.js"></script>
-    <script src="js/colorPicker.js"></script>
->>>>>>> mobile
   </body>
+  <script></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/overlay.js"></script>
+  <script src="js/multiButton.js"></script>
+  <script src="js/colorPicker.js"></script>
 </html>

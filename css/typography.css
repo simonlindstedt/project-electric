@@ -1,0 +1,135 @@
+/* Typography */
+
+@font-face {
+  font-family: "Dosis";
+  src: local("Dosis"),
+    url("/assets/fonts/regular/Dosis-Bold.woff2") format("woff2"),
+    url("/assets/fonts/regular/Dosis-Bold.woff") format("woff");
+  font-display: block;
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Dosis";
+  src: local("Dosis"),
+    url("/assets/fonts/regular/Dosis-Regular.woff2") format("woff2"),
+    url("/assets/fonts/regular/Dosis-Regular.woff") format("woff");
+  font-display: block;
+  font-weight: normal;
+  font-style: normal;
+  font-display: auto;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Dosis";
+  font-weight: 700;
+  font-size: 4rem;
+  color: white;
+  animation: infinite;
+  animation-name: electric;
+  animation-duration: 4s;
+}
+
+@keyframes electric {
+  0% {
+    color: rgb(243, 248, 250);
+  }
+  15% {
+    color: rgb(255, 255, 234);
+  }
+  25% {
+    color: rgb(244, 249, 250);
+  }
+  50% {
+    color: rgb(250, 246, 212);
+  }
+  75% {
+    color: rgb(232, 239, 241);
+  }
+  85% {
+    color: rgb(243, 236, 212);
+  }
+  100% {
+    color: rgb(241, 246, 248);
+  }
+}
+
+nav a {
+  font-weight: 700;
+}
+
+header h2 {
+  margin: 0;
+  font-family: "Dosis";
+  font-weight: normal;
+  color: white;
+  margin-bottom: 64px;
+}
+
+footer h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+footer a {
+  font-size: 1.5rem;
+}
+
+.navigation-content li a {
+  font-size: 1.8rem;
+}
+
+.contact-form input {
+  color: white;
+}
+
+.contact-form label {
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.contact-form button {
+  color: white;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.contact-form.free a {
+  font-weight: 900;
+}
+
+.text-box {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.text-box h2 {
+  margin-top: 0;
+  font-family: "Dosis";
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 980px) {
+  nav a {
+    font-weight: 900;
+  }
+
+  .navigation-content li a {
+    font-size: 1.3rem;
+  }
+}

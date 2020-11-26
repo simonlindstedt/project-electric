@@ -1,0 +1,34 @@
+/* Main */
+
+:root {
+  --husBlue: #162133;
+  --darkGreen: #303b37;
+  --greyBlue: #a8b7ba;
+  --grey: #cbcdca;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  background-color: var(--husBlue);
+}
+
+/* NOT MOBILE SAFARI UNTIL FIXED */
+@supports (-webkit-touch-callout: none) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  body {
+    scroll-snap-type: none;
+  }
+}
