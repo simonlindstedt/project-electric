@@ -67,6 +67,7 @@ nav {
   -webkit-backdrop-filter: blur(8px);
   padding: 16px;
 }
+
 .contact-form label {
   margin-bottom: 24px;
 }
@@ -149,7 +150,7 @@ li.contact svg {
   bottom: 0;
   width: 100%;
   display: flex;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--grey);
   justify-content: space-evenly;
 }
 
@@ -198,7 +199,7 @@ li.contact svg {
 
 /* image gallery */
 
-.slide {
+/* .slide {
   display: none;
 }
 
@@ -233,9 +234,18 @@ li.contact svg {
 .gallery-nav-button:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
+} */
+
+#overlay img {
+  user-select: none;
+  transition: opacity ease-out 0.5s;
 }
 
-@media only screen and (min-width: 900px) {
+img#overlay.active {
+  opacity: 0;
+}
+
+@media only screen and (min-width: 980px) {
   .menu-button {
     display: none;
   }
@@ -249,7 +259,7 @@ li.contact svg {
     backdrop-filter: unset;
     -webkit-backdrop-filter: unset;
     width: 100%;
-    height: fit-content;
+    height: auto;
     margin: 0;
     padding: 16px;
     border-radius: 0%;
@@ -262,6 +272,12 @@ li.contact svg {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 8px;
+    transition: ease-in-out 0.2s;
+  }
+
+  .navigation-content li:hover {
+    background-color: rgba(16, 21, 33, 0.7);
+    transform: scale(1.05);
   }
 
   .navigation-content li:first-child {
@@ -318,7 +334,7 @@ li.contact svg {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1290px) {
   .navigation-content {
     justify-content: flex-start;
   }

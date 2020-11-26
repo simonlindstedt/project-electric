@@ -2,7 +2,6 @@ footer {
   scroll-snap-align: start;
   position: relative;
   background-color: var(--husBlue);
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 32px;
@@ -19,5 +18,21 @@ footer h5 {
 
 footer a {
   margin: 0px 0px 8px 0px;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+
+.social-media svg {
+  margin: 6px;
+}
+.copyright {
+  font-size: 0.7rem;
+  text-align: center;
   color: white;
 }

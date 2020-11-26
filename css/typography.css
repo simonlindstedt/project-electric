@@ -2,17 +2,10 @@
 
 @font-face {
   font-family: "Dosis";
-  src: url("/assets/fonts/regular/Dosis-ExtraBold.woff") format("woff"),
-    url("/assets/fonts/regular/Dosis-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  font-display: auto;
-}
-
-@font-face {
-  font-family: "Dosis";
-  src: url("/assets/fonts/regular/Dosis-Bold.woff") format("woff"),
-    url("/assets/fonts/regular/Dosis-Bold.woff2") format("woff2");
+  src: local("Dosis"),
+    url("/assets/fonts/regular/Dosis-Bold.woff2") format("woff2"),
+    url("/assets/fonts/regular/Dosis-Bold.woff") format("woff");
+  font-display: block;
   font-weight: 700;
   font-style: normal;
   font-display: auto;
@@ -20,8 +13,10 @@
 
 @font-face {
   font-family: "Dosis";
-  src: url("/assets/fonts/regular/Dosis-Regular.woff") format("woff"),
-    url("/assets/fonts/regular/Dosis-Regular.woff2") format("woff2");
+  src: local("Dosis"),
+    url("/assets/fonts/regular/Dosis-Regular.woff2") format("woff2"),
+    url("/assets/fonts/regular/Dosis-Regular.woff") format("woff");
+  font-display: block;
   font-weight: normal;
   font-style: normal;
   font-display: auto;
@@ -43,31 +38,32 @@ header h1 {
   font-weight: 700;
   font-size: 4rem;
   color: white;
+  animation: infinite;
   animation-name: electric;
-  animation-duration: 12s;
+  animation-duration: 4s;
 }
 
 @keyframes electric {
   0% {
-    color: white;
+    color: rgb(243, 248, 250);
   }
   15% {
-    color: rgb(137, 171, 226);
+    color: rgb(255, 255, 234);
   }
   25% {
-    color: rgb(247, 229, 129);
+    color: rgb(244, 249, 250);
   }
   50% {
-    color: white;
+    color: rgb(250, 246, 212);
   }
   75% {
-    color: #6a8bc2;
+    color: rgb(232, 239, 241);
   }
   85% {
-    color: rgb(145, 224, 235);
+    color: rgb(243, 236, 212);
   }
   100% {
-    color: white;
+    color: rgb(241, 246, 248);
   }
 }
 
@@ -78,7 +74,9 @@ nav a {
 header h2 {
   margin: 0;
   font-family: "Dosis";
+  font-weight: normal;
   color: white;
+  margin-bottom: 64px;
 }
 
 footer h2 {
@@ -126,7 +124,7 @@ footer a {
   font-size: 2rem;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 980px) {
   nav a {
     font-weight: 900;
   }
