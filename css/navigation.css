@@ -202,7 +202,7 @@ li.contact svg {
   transition: opacity ease-out 0.5s;
 }
 
-img#overlay.active {
+img#overlay-img.active {
   opacity: 0;
 }
 

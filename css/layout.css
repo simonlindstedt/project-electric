@@ -31,19 +31,19 @@ section {
   margin-bottom: 0px;
 }
 
-.text-box#design,
-.text-box#history {
+.text-box#design-text,
+.text-box#history-text {
   justify-self: center;
   width: auto;
   margin: 96px 16px 0px 16px;
 }
 
-.text-box#overlay {
+.text-box#overlay-text {
   justify-self: start;
   align-self: end;
 }
 
-.text-box#merch h2 {
+.text-box#merch-text h2 {
   margin: 0;
 }
 
@@ -106,7 +106,7 @@ img.grid-item {
     object-fit: cover;
   }
 
-  .text-box#overlay {
+  .text-box#overlay-text {
     display: none;
   }
 
@@ -143,18 +143,18 @@ img.grid-item {
     background-color: rgba(16, 21, 33, 0.7);
   }
 
-  .text-box#overlay {
+  .text-box#overlay-text {
     display: none;
   }
 
-  .text-box#design,
-  .text-box#history {
+  .text-box#design-text,
+  .text-box#history-text {
     justify-self: end;
     margin: 16px;
     width: 300px;
   }
 
-  .text-box#merch {
+  .text-box#merch-text {
     justify-self: center;
     align-self: center;
   }

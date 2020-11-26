@@ -20,8 +20,6 @@ body {
   margin: 0;
   scroll-snap-type: y mandatory;
   background-color: var(--husBlue);
-  /* height: 100vh;
-  overflow-y: scroll; */
 }
 
 /* NOT MOBILE SAFARI UNTIL FIXED */

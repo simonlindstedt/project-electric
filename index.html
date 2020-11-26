@@ -6,10 +6,10 @@
     <link
       rel="shortcut icon"
       href="/assets/icons/logotypElectric.svg"
-      type="svg"
+      type="image/x-icon"
     />
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" rel="preload" href="/css/typography.css" />
+    <link rel="stylesheet" href="/css/typography.css" />
     <link rel="stylesheet" href="/css/navigation.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/layout.css" />
@@ -60,6 +60,11 @@
           />
         </svg>
       </div>
+      <form class="contact-form">
+        <label for="mail">Want a car?</label>
+        <input type="email" id="mail" name="mail" placeholder="Your email" />
+        <button>submit</button>
+      </form>
       <ul class="navigation-content">
         <li><a href="#home">Home</a></li>
         <li><a href="#history">History</a></li>
@@ -67,11 +72,6 @@
         <li><a href="#overlay">Technology</a></li>
         <li><a href="#interior">Interior</a></li>
         <li><a href="#merch">Merchandise</a></li>
-        <form action="" class="contact-form">
-          <label for="mail">Want a car?</label>
-          <input type="mail" id="mail" name="mail" placeholder="Your email" />
-          <button>submit</button>
-        </form>
         <li class="contact">
           <a href="contact.html">Contact</a>
           <svg
@@ -95,16 +95,16 @@
         src="/assets/images/exterior/fog.jpg"
         alt="header-exterior"
         srcset="
-          assets/images/exterior/fog.jpg       2500w,
-          assets/images/exterior/fog@0.75x.jpg 1900w,
-          assets/images/exterior/fog@0.5x.jpg  1200w,
+          assets/images/exterior/fog.jpg       2400w,
+          assets/images/exterior/fog@0.75x.jpg 1800w,
+          assets/images/exterior/fog@0.5x.jpg  1100w,
           assets/images/exterior/fog@0.33x.jpg  700w
         "
         sizes="
-        (max-width: 700px) 700w,
-        (max-width: 1200px) 1200w,
-        (max-width: 1900px) 1900w,
-        2500w
+          (min-width: 2400px) 2450px,
+          (min-width: 1700px) 1750px,
+          (min-width: 1100px) 1150px,
+          (min-width: 700px) 750px
         "
         class="cover"
       />
@@ -118,20 +118,20 @@
             src="assets/images/exterior/car_with_people.jpg"
             alt="history"
             srcset="
-              assets/images/exterior/car_with_people.jpg       2500w,
-              assets/images/exterior/car_with_people@0.75x.jpg 1900w,
-              assets/images/exterior/car_with_people@0.5x.jpg  1200w,
+              assets/images/exterior/car_with_people.jpg       2400w,
+              assets/images/exterior/car_with_people@0.75x.jpg 1800w,
+              assets/images/exterior/car_with_people@0.5x.jpg  1100w,
               assets/images/exterior/car_with_people@0.33x.jpg  700w
             "
             sizes="
-            (max-width: 700px) 700w,
-            (max-width: 1200px) 1200w,
-            (max-width: 1900px) 1900w,
-            2500w
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
             "
             class="cover"
           />
-          <div class="text-box" id="history">
+          <div class="text-box" id="history-text">
             <h2>History</h2>
             <p>
               Peugeot is a brand with history. The first car to carry the
@@ -141,7 +141,7 @@
             </p>
             <p>
               Family business is now a global business. Today we are starting a
-              new chapter. Electric; it is the future
+              new chapter. Electric; it is the future.
             </p>
           </div>
         </div>
@@ -150,20 +150,20 @@
             src="assets/images/exterior/right.jpg"
             alt="design-exterior"
             srcset="
-              assets/images/exterior/right.jpg       2500w,
-              assets/images/exterior/right@0.75x.jpg 1900w,
-              assets/images/exterior/right@0.5x.jpg  1200w,
+              assets/images/exterior/right.jpg       2400w,
+              assets/images/exterior/right@0.75x.jpg 1800w,
+              assets/images/exterior/right@0.5x.jpg  1100w,
               assets/images/exterior/right@0.33x.jpg  700w
             "
             sizes="
-              (max-width: 700px) 700w,
-              (max-width: 1200px) 1200w,
-              (max-width: 1900px) 1900w,
-              2500w
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
             "
             class="cover"
           />
-          <div class="text-box" id="design">
+          <div class="text-box" id="design-text">
             <h2>Design</h2>
             <p>
               Peugeot is bringing car driving to the next level. We are on the
@@ -180,20 +180,20 @@
             src="assets/images/exterior/car_flying.jpg"
             alt="tech-flying"
             srcset="
-              assets/images/exterior/car_flying.jpg       2500w,
-              assets/images/exterior/car_flying@0.75x.jpg 1900w,
-              assets/images/exterior/car_flying@0.5x.jpg  1200w,
+              assets/images/exterior/car_flying.jpg       2400w,
+              assets/images/exterior/car_flying@0.75x.jpg 1800w,
+              assets/images/exterior/car_flying@0.5x.jpg  1100w,
               assets/images/exterior/car_flying@0.33x.jpg  700w
             "
             sizes="
-              (max-width: 700px) 700w,
-              (max-width: 1200px) 1200w,
-              (max-width: 1900px) 1900w,
-              2500w
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
             "
             class="cover"
           />
-          <div class="text-box" id="tech">
+          <div class="text-box" id="tech-text">
             <h2>Technology</h2>
             <p>Highly advanced, and airbourne</p>
           </div>
@@ -202,16 +202,16 @@
           <img
             src="assets/images/overlay/overlay_with_text.jpg"
             srcset="
-              assets/images/overlay/overlay_with_text.jpg       2500w,
-              assets/images/overlay/overlay_with_text@0.75x.jpg 1900w,
-              assets/images/overlay/overlay_with_text@0.5x.jpg  1200w,
+              assets/images/overlay/overlay_with_text.jpg       2400w,
+              assets/images/overlay/overlay_with_text@0.75x.jpg 1800w,
+              assets/images/overlay/overlay_with_text@0.5x.jpg  1100w,
               assets/images/overlay/overlay_with_text@0.33x.jpg  700w
             "
             sizes="
-              (max-width: 700px) 700w,
-              (max-width: 1200px) 1200w,
-              (max-width: 1900px) 1900w,
-              2500w
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
             "
             alt="battery"
             class="cover"
@@ -220,21 +220,21 @@
             src="assets/images/overlay/transparent.jpg"
             alt="overlay"
             srcset="
-              assets/images/overlay/transparent.jpg       2500w,
-              assets/images/overlay/transparent@0.75x.jpg 1900w,
-              assets/images/overlay/transparent@0.5x.jpg  1200w,
+              assets/images/overlay/transparent.jpg       2400w,
+              assets/images/overlay/transparent@0.75x.jpg 1800w,
+              assets/images/overlay/transparent@0.5x.jpg  1100w,
               assets/images/overlay/transparent@0.33x.jpg  700w
             "
             sizes="
-              (max-width: 700px) 700w,
-              (max-width: 1200px) 1200w,
-              (max-width: 1900px) 1900w,
-              2500w
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
             "
             class="cover"
-            id="overlay"
+            id="overlay-img"
           />
-          <div class="text-box" id="overlay">
+          <div class="text-box" id="overlay-text">
             <h2>Overlay</h2>
             <p>Flip your phone for a closer look</p>
           </div>
@@ -243,16 +243,16 @@
           <img
             src="assets/images/interior/white.jpg"
             srcset="
-              assets/images/interior/white.jpg       2500w,
-              assets/images/interior/white@0.75x.jpg 1900w,
-              assets/images/interior/white@0.5x.jpg  1200w,
+              assets/images/interior/white.jpg       2400w,
+              assets/images/interior/white@0.75x.jpg 1800w,
+              assets/images/interior/white@0.5x.jpg  1100w,
               assets/images/interior/white@0.33x.jpg  700w
             "
             sizes="
-              (max-width: 700px) 700w,
-              (max-width: 1200px) 1200w,
-              (max-width: 1900px) 1900w,
-              2500w
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
             "
             alt="interior-white"
             class="cover color-variant"
@@ -260,16 +260,16 @@
           <img
             src="assets/images/interior/black.jpg"
             srcset="
-              assets/images/interior/black.jpg       2500w,
-              assets/images/interior/black@0.75x.jpg 1900w,
-              assets/images/interior/black@0.5x.jpg  1200w,
+              assets/images/interior/black.jpg       2400w,
+              assets/images/interior/black@0.75x.jpg 1800w,
+              assets/images/interior/black@0.5x.jpg  1100w,
               assets/images/interior/black@0.33x.jpg  700w
             "
             sizes="
-              (max-width: 700px) 700w,
-              (max-width: 1200px) 1200w,
-              (max-width: 1900px) 1900w,
-              2500w
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
             "
             alt="interior-black"
             class="cover color-variant"
@@ -277,21 +277,21 @@
           <img
             src="assets/images/interior/brown.jpg"
             srcset="
-              assets/images/interior/brown.jpg       2500w,
-              assets/images/interior/brown@0.75x.jpg 1900w,
-              assets/images/interior/brown@0.5x.jpg  1200w,
+              assets/images/interior/brown.jpg       2400w,
+              assets/images/interior/brown@0.75x.jpg 1800w,
+              assets/images/interior/brown@0.5x.jpg  1100w,
               assets/images/interior/brown@0.33x.jpg  700w
             "
             sizes="
-              (max-width: 700px) 700w,
-              (max-width: 1200px) 1200w,
-              (max-width: 1900px) 1900w,
-              2500w
+              (min-width: 2400px) 2450px,
+              (min-width: 1700px) 1750px,
+              (min-width: 1100px) 1150px,
+              (min-width: 700px) 750px
             "
             alt="interior-brown"
             class="cover color-variant"
           />
-          <div class="text-box" id="interior">
+          <div class="text-box" id="interior-text">
             <h2>Interior</h2>
             <p>Choose your prefered color</p>
           </div>
@@ -306,33 +306,33 @@
             <img
               src="assets/images/merch/glasses.jpg"
               srcset="
-                assets/images/merch/glasses.jpg       2500w,
-                assets/images/merch/glasses@0.75x.jpg 1900w,
-                assets/images/merch/glasses@0.5x.jpg  1200w,
+                assets/images/merch/glasses.jpg       2400w,
+                assets/images/merch/glasses@0.75x.jpg 1800w,
+                assets/images/merch/glasses@0.5x.jpg  1100w,
                 assets/images/merch/glasses@0.33x.jpg  700w
               "
               sizes="
-                (max-width: 700px) 700w,
-                (max-width: 1200px) 1200w,
-                (max-width: 1900px) 1900w,
-                2500w
+                (min-width: 2400px) 2450px,
+                (min-width: 1700px) 1750px,
+                (min-width: 1100px) 1150px,
+                (min-width: 700px) 750px
               "
               alt="merch-glasses"
               class="grid-item"
             />
             <img
-              src="assets/images/merch/bagLogo.jpg"
+              src="assets/images/merch/bag.jpg"
               srcset="
-                assets/images/merch/bag.jpg       2500w,
-                assets/images/merch/bag@0.75x.jpg 1900w,
-                assets/images/merch/bag@0.5x.jpg  1200w,
+                assets/images/merch/bag.jpg       2400w,
+                assets/images/merch/bag@0.75x.jpg 1800w,
+                assets/images/merch/bag@0.5x.jpg  1100w,
                 assets/images/merch/bag@0.33x.jpg  700w
               "
               sizes="
-                (max-width: 700px) 700w,
-                (max-width: 1200px) 1200w,
-                (max-width: 1900px) 1900w,
-                2500w
+                (min-width: 2400px) 2450px,
+                (min-width: 1700px) 1750px,
+                (min-width: 1100px) 1150px,
+                (min-width: 700px) 750px
               "
               alt="merch-bag"
               class="grid-item"
@@ -340,22 +340,22 @@
             <img
               src="assets/images/merch/bag.jpg"
               srcset="
-                assets/images/merch/bag.jpg       2500w,
-                assets/images/merch/bag@0.75x.jpg 1900w,
-                assets/images/merch/bag@0.5x.jpg  1200w,
+                assets/images/merch/bag.jpg       2400w,
+                assets/images/merch/bag@0.75x.jpg 1800w,
+                assets/images/merch/bag@0.5x.jpg  1100w,
                 assets/images/merch/bag@0.33x.jpg  700w
               "
               sizes="
-                (max-width: 700px) 700w,
-                (max-width: 1200px) 1200w,
-                (max-width: 1900px) 1900w,
-                2500w
+                (min-width: 2400px) 2450px,
+                (min-width: 1700px) 1750px,
+                (min-width: 1100px) 1150px,
+                (min-width: 700px) 750px
               "
               alt="merch-bag-two"
               class="grid-item"
             />
           </div>
-          <div class="text-box" id="merch">
+          <div class="text-box" id="merch-text">
             <h2>Merchandise</h2>
           </div>
         </div>
@@ -525,10 +525,9 @@
 
       <p class="copyright">Copyright 2020 Electric</p>
     </footer>
+    <script src="js/navigation.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/multiButton.js"></script>
+    <script src="js/colorPicker.js"></script>
   </body>
-  <script></script>
-  <script src="js/navigation.js"></script>
-  <script src="js/overlay.js"></script>
-  <script src="js/multiButton.js"></script>
-  <script src="js/colorPicker.js"></script>
 </html>
