@@ -13,12 +13,12 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 body {
   margin: 0;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   background-color: var(--husBlue);
 }
 
