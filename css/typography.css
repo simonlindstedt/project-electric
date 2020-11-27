@@ -22,6 +22,10 @@
   font-display: auto;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: Helvetica, sans-serif;
 }
@@ -125,6 +129,10 @@ footer a {
 }
 
 @media only screen and (min-width: 980px) {
+  html {
+    font-size: 16px;
+  }
+
   nav a {
     font-weight: 900;
   }

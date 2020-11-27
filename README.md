@@ -1,11 +1,5 @@
 # project-electric
 
-<<<<<<< HEAD
-main-branch
-
-test
-=======
 ##
 
-Update 11/11-20
->>>>>>> mobile
+Project Electric, final push 26/11 23:10.

@@ -3,49 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
-    <title>Electric</title>
-    <style>
-      body {
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: Helvetica, sans-serif;
-      }
-      h1 {
-        font-size: 8rem;
-      }
-      p {
-        font-size: 4rem;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Work in progress</h1>
-    <p id="timeLeft"></p>
-    <script>
-      var endDate = new Date("27 Nov, 2020 09:00:00").getTime();
-
-      var x = setInterval(function () {
-        var now = new Date().getTime();
-        var timeRemaining = endDate - now;
-
-        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        var hours = Math.floor(
-          (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        var minutes = Math.floor(
-          (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
-        );
-        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-        document.getElementById("timeLeft").innerHTML =
-          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-      }, 1000);
-    </script>
-=======
     <link
       rel="shortcut icon"
       href="/assets/icons/logotypElectric.svg"
@@ -569,9 +526,8 @@
       <p class="copyright">Copyright 2020 Electric</p>
     </footer>
     <script src="js/navigation.js"></script>
-    <script src="js/overlay.js"></script>
     <script src="js/multiButton.js"></script>
+    <script src="js/overlay.js"></script>
     <script src="js/colorPicker.js"></script>
->>>>>>> mobile
   </body>
 </html>
